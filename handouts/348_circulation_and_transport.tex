@@ -1,0 +1,119 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt, addpoints]{exam}
+\usepackage{graphicx}
+	\graphicspath{{/Users/goby/Pictures/teach/348/handouts/}
+	{img/}} % set of paths to search for images
+
+\usepackage{geometry}
+\geometry{letterpaper, bottom=1in}                   
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{amssymb, amsmath}
+\usepackage{mathtools}
+	\everymath{\displaystyle}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures={TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, BoldItalicFont={* BoldItalic}, Numbers={Proportional}]{Linux Libertine O}
+\setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Linux Biolinum O}
+%\setmonofont[Scale=MatchLowercase]{Inconsolata}
+\usepackage{microtype}
+
+\usepackage{unicode-math}
+\setmathfont[Scale=MatchLowercase]{Asana Math}
+
+\newfontfamily{\tablenumbers}[Numbers={Monospaced}]{Linux Libertine O}
+\newfontfamily{\libertinedisplay}{Linux Libertine Display O}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%\usepackage{tabularx}
+%\usepackage{longtable}
+%\usepackage{siunitx}
+
+\usepackage{hanging}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+%\usepackage{enumitem}
+
+%\usepackage{titling}
+%\setlength{\droptitle}{-60pt}
+%\posttitle{\par\end{center}}
+%\predate{}\postdate{}
+
+\renewcommand{\solutiontitle}{\noindent}
+\unframedsolutions
+\SolutionEmphasis{\bfseries}
+
+\pagestyle{headandfoot}
+\firstpageheader{BI 348: Marine Biology}{}{\ifprintanswers\textbf{KEY} \else Name \rule{2.5in}{0.4pt}\fi}
+\runningheader{}{}{\footnotesize{pg. \thepage}}
+\footer{}{}{}
+\runningheadrule
+
+%\printanswers
+
+\begin{document}
+
+\subsection*{Ocean Currents and Larval Transport (\numpoints\ points)}
+
+\begin{multicols}{2}
+
+\noindent\includegraphics[width=0.49\textwidth]{larval_transport}\\
+{\footnotesize Modified from Epifano and Garvine 2001.}
+
+\columnbreak
+
+We have discussed how surface currents in the ocean are formed and move in the oceans.  The forces that form ocean gyres also work at regional scales. 
+This exercise will help you apply what you have learned to a smaller scale.
+Work in a group of 3–4 students to discuss ideas. You are allowed 
+to use your notes.
+
+Consider this diagram of the northeastern coast of the U.S.  All along the coast here are numerous estuaries, like Delaware Bay. Freshwater from inland rivers flows into the estuaries and from there into the ocean. In the spring, the prevailing wind on this coast comes from the south. 
+
+\end{multicols}
+
+\begin{questions}
+
+\question[5]
+\label{ques:spring_currents}Based on what you know of the physical forces at play here, describe in detail how you believe surface currents will be moving at this location during the spring. Include the name of the forces and how each contributes to the direction of current movement. (Drawing arrows may help but please say why you think so with words.)
+
+%\vspace*{\stretch{1}}
+
+\newpage
+
+\question[5]
+In the fall, the wind shifts and blows along this coast from the north.  How do you think the ocean currents will be moving then? Why?
+
+\vspace*{\stretch{0.75}}
+
+%\newpage
+
+
+\begin{multicols}{2}
+
+\uplevel{\noindent\includegraphics[width=0.49\textwidth]{larval_transport}}
+
+\columnbreak
+
+Estuaries like Delaware Bay are breeding grounds for many species, including the Blue Crab, \textit{Callinectes sapidus.} This crab produces planktotrophic larvae that are released into the estuary. However, the larvae of this species develop in the ocean over the shelf.
+
+\question[3]
+Based on question~\ref{ques:spring_currents}, what time of year (season) must the crab release their larvae to ensure their transport outward over the continental shelf? Draw arrows on the diagram at left demonstrating what you believe would be the movement of the larvae.
+
+\end{multicols}
+
+
+\question[5]
+To metamorphose into adults, the Blue Crab larvae must return to the estuary.  Using all the information you’ve collected, describe what time of year and what forces carry the larvae back to the estuary. Use arrows to map the complete movement.
+
+\vspace*{\stretch{1}}
+
+\end{questions}
+
+\end{document}  
