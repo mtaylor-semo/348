@@ -1,0 +1,138 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 09}
+\author{Rocky Sublittoral Communities}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 38, 418--432.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+wave crest\\
+wave trough\\
+wave length\\
+wave height\\
+rogue waves\\
+tsunami\\
+subtidal \\
+sublittoral \\
+infralittoral \\
+circalittoral \\
+keystone species \\
+trophic cascade \\
+alternate stable states
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+
+\item 
+  A friend tells you that waves are due to water moving from 
+  offshore to onshore.  Explain to your friend what forms ocean 
+  waves and what really moves through the water. Describe some 
+  observational evidence to back up your explanation.
+
+\item 
+  Your friend counters your explanation by saying that water has to 
+  be moving forward in wave because otherwise surfers wouldn't 
+  be able to surf.  Expand your explanation of waves to explain the 
+  forces that propel surfers forward to the shore.\sidenote{Or the rocks if they are not good surfers}
+
+\item
+  What is a rogue wave? What hypothesis has been put forward 
+  to explain the presence of rogue waves.
+
+\item
+  Now your friend tries to tell you that tsunami are caused by freak 
+  tides. (``Dude, why else would they be called tidal waves?'')
+  \sidenote{You really should pick a better class of friends!} Explain 
+  (patiently) to your friend how tsunami differ from regular waves.  
+  Include in your explanation the differences in terms of tsunami formation, 
+  wave length, wave height, and speed.
+
+\item
+  Discuss how the abiotic environmental parameters found in the
+  sublittoral zone affect community structure. Be sure to account for
+  depth gradients. Where do the abiotic factors have the greatest
+  influence on community structure, and why?
+  
+\item
+  Discuss the biotic factors that affect sublittoral community
+  structure. How does this interact with each other to influence
+  structure?
+
+\item
+  What is the infralittoral zone? What is the circalittoral zone? Does
+  the bottom of the infralittoral zone always coincide with PAR?
+  Why or why not?
+
+\item
+  What are two keystone species that affect community structure near the
+  bottom of the kelp zone? Explain how these species influence diversity
+  in the sublittoral.
+
+\item
+  Describe the long-term interactions between kelp and sea urchins and 
+  associated alternate stable states. How do you think this would influence 
+  patch dynamics and diversity at larger scales (say, along the western 
+  coast of Washington, Oregon, California and Baja California?)
+
+\item
+  What is a trophic cascade? Describe a trophic cascade that is
+  representative of rocky subtidal communities.
+  
+\end{enumerate}
+
+
+\end{document}

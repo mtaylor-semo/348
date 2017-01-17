@@ -1,0 +1,114 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 11}%\hfill}
+\author{Tides and the Rocky Intertidal}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}\marginnote{\textbf{Read:} pgs. 38--41; 355--373.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+tides\\
+diurnal tide\\
+semidiurnal tide\\
+mixed semidiurnal tide\\
+neap tide\\
+spring tide\\
+littoral \\
+intertidal \\
+supralittoral fringe\\
+midlittoral zone\\
+infralittoral zone (sublittoral)\\
+keystone species \\
+patch dynamics \\
+alternative stable states
+\end{multicols}
+
+\section{Concepts}
+
+You should \emph{write} clear and concise answers to each question in the Concepts section.  The questions are not necessarily independent.  Think broadly across lectures to see ``the big picture.'' 
+
+\begin{enumerate}
+
+	\item Describe how tides are caused.
+
+	\item Explain the difference between semidiurnal, mixed semidiurnal, and diurnal tides.
+
+	\item Explain the conditions that cause spring and neap tides. How often does each occur?
+	
+	\item Describe the positions of the Sun and Moon relative to the Earth to explain spring and neap tides. Explain how spring and neap tides relate to the phases of the moon.
+
+\item
+  List the biotic factors that contribute to the observed vertical
+  zonation of the littoral zone. Explain how each influences the
+  vertical distribution of species. Include representative species in
+  your discussion.
+\item
+  Explain how patch dynamics increases overall species diversity in the
+  rocky intertidal. How does patch size at local scales affect overall
+  diversity? How does patch dynamics relate to alternative stable states
+  and overall species diversity at regional scales?
+\item
+  Compare and contrast the rocky intertidal and subtidal communities in
+  terms of the environmental and biotic factors that influence community
+  structure. Include in your discussion the factors that influence
+  community dynamics at the upper limit of each community (e.g.,
+  supralittoral zone of intertidal, and shallowest depths of the
+  subtidal) and at the lower limit of each community. Based on this
+  comparison, do you observe any trends or commonalities in the types of
+  factors that control the upper and lower limits of these communities?
+  Explain.
+
+
+\end{enumerate}
+
+\end{document}

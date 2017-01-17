@@ -1,0 +1,166 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 05}
+\author{Primary Production and Ocean Ecosystem Models}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 225--240, 247--253.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+diatoms \\
+Bacillariophyceae \\
+dinoflagellates \\
+Dinophyceae \\
+primary production \\
+gross primary production \\
+net primary production \\
+compensation depth \\
+compensation intensity \\
+PAR \\
+Redfield ratio\\
+bacterioplankton \\
+microbial loop
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+
+\item
+  You should know the basic nutrient acronyms: DIC, DOC, DIP, DOP, DIN,
+  DON, DOM, etc.
+
+\item
+  What is primary production? What is photosynthesis? Are they the same
+  thing? Explain why or why not?
+
+\item
+  What factors most limit gross primary production by net
+  phytoplankton? Which of these factors imposes the greatest limit to
+  primary production? Why?
+
+\item
+  Which nutrients are most limiting to phytoplankton?
+
+\item What is the Redfield ratio? What elements are included in the ratio?  What is the ratio of each element in phytoplankton and the surrounding water?  How does it show which nutrient(s) is/are limiting?
+
+\item
+  Explain the difference between gross and net primary production.
+\item
+  Explain the differences and similarities of compensation depth and
+  compensation intensity.
+\item
+  Explain the factors that influence photosynthetically available
+  radiation (PAR) at depth in the water column (for example, at 50 or
+  75m of depth). Consider both the atmospheric conditions and oceanic
+  conditions.
+\item
+  Considering (for now) only light intensity, why is primary
+  productivity higher at roughly 20m depth than at the surface?
+
+
+\item
+  Summarize and illustrate the ``classic model'' of primary productivity in the ocean. Your
+  summary should name the major phytoplankton and zooplankton organisms
+  and describe their roles in overall net primary production. Your
+  summary should also describe the relative availability of nutrients
+  and light to explain the timing of peak productivity.
+  
+\item
+  The classic model of primary production still works for several marine
+  ecosystems. Which ones? However, the model is not satisfactory for
+  other marine ecosystems. Name these ecosystems and state why the
+  classic model doesn't fully explain gross primary production.
+  
+\item
+  Discuss the limitations imposed by nutrients and copepod grazing on
+  gross primary production in the classic model.
+  
+\item
+  The classic ecosystem model of primary productivity accounts only for
+  copepods, often only a single species of copepod. Yet, there are
+  hundreds of species of net zooplankton that graze on phytoplankton. Why
+  are these other net zooplankton not included in the model? (Think: grazing)
+
+\item
+  Similarly, the classic model accounts for primary production by
+  diatoms and dinoflagellates, but there are hundreds of species of net
+  phytoplankton in the epipelagic. Why are the other net phytoplankton
+  not included in the model?
+  
+\item
+  What is the microbial loop? What is the importance of the microbial
+  loop to DOM (dissolved organic matter) in the epipelagic zone?
+  
+\item
+  Illustrate a complete model for primary productivity and energy flow
+  in the marine ecosystem that incorporates both the classic model and
+  the updated model with the microbial loop. Include the major
+  nutrients, and major groups of organisms involved.
+  
+\item
+  Energy transfer from primary producers to primary consumers in marine
+  ecosystems is more efficient than energy transfer between in the same
+  trophic levels in terrestrial ecosystems. Explain why.
+  
+\item
+  Total NPP of the oceans accounts for nearly half (ca. 46\%) of total
+  global NPP, yet the per area average NPP (i.e., kg C /
+  m\textsuperscript{2} / yr) is much lower for oceans than for
+  terrestrial ecosystems. Account for this apparent discrepancy.
+ 
+ \end{enumerate}
+
+
+\end{document}

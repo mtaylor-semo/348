@@ -1,0 +1,567 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+%\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage[version=4]{mhchem}
+%\usepackage{siunitx}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{4cm}{0.4pt}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tidal_mudflat}}
+\begin{frame}[b]{Soft bottom intertidal}
+\tiny\textcolor{white}{Ingolfson, Wikimedia Commons.}
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{sediment_size}}
+\begin{frame}[b]{Sediment size determines water retention for benthic communities.}
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}}
+
+%\begin{frame}[t]{Sediment size determines water retention for benthic communities.}
+%
+%	\includegraphics[width=\textwidth]{sediment_size}
+%	
+%	\vskip0pt plus 1filll
+%
+%	\tiny\textcopyright\,McGraw-Hill
+%
+%\end{frame}
+%
+\begin{frame}[t]{Sand drains quickly. Clay and silt retain water.}
+
+	\includegraphics[width=\textwidth]{sediment_sorted}
+	
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{The soft-bottom intertidal has less obvious zonation than rocky intertidal.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{multicols}{2}
+
+		\begin{center}
+			\includegraphics[height=0.79\textheight]{soft_bottom_lighthouse}
+		\end{center}
+
+	\columnbreak
+
+		\begin{center}
+			\includegraphics[height=0.79\textheight]{soft_bottom_estuary}
+		\end{center}
+
+	\end{multicols}
+
+	\vspace*{-0.5\baselineskip}
+	
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{Horizontal zonation is less obvious because most organisms live in the substrate.}
+
+	\includegraphics[width=0.97\textwidth]{soft_bottom_zonation}
+	
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{Mud flats contain diverse \highlight{infauna.}}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{soft_bottom_infauna1}\\
+		\includegraphics[width=0.45\textwidth]{soft_bottom_infauna2}\\
+	\end{center}
+
+\columnbreak
+
+	\hangpara Few primary producers are present.
+	
+	\hangpara Chemosynthetic bacteria are abundant.
+	
+	\hangpara \highlight{Meiofauna} fit in spaces between grains.\\
+		\hspace*{1em} 0.5 mm to 0.6 µm.
+		
+	\hangpara Burrowing fauna cause \highlight{bioturbation.}
+	
+	\hangpara Zonation based on grain size.
+
+\end{multicols}
+
+	\vspace*{-0.5\baselineskip}
+	
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{sediment_burrow}}
+\begin{frame}[b]{The shape of the burrow enhances water flow through the burrow.}
+\tiny\textcopyright\,Oxford
+\end{frame}
+}
+%
+\begin{frame}[t]{Vertical zonation depends on oxygen availability.}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+
+	\begin{center}
+		\includegraphics[height=0.79\textheight]{soft_bottom_zonation_vertical}
+	\end{center}
+
+\columnbreak
+
+	\hangpara Surface aerobic zone is oxygenated via \highlight{bioturbation.}
+	
+	\hangpara Deep anaerobic zone is dominated by chemosynthetic bacteria.
+
+\end{multicols}
+
+	\vspace*{-0.5\baselineskip}
+	
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{Estuaries are the interface between rivers and oceans.}
+
+	\includegraphics[height=0.79\textheight]{pamlico_sound}\hfill
+	\includegraphics[height=0.79\textheight]{soft_bottom_estuary}
+	
+	\vskip0pt plus 1filll
+
+	\hfill\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{Five types of estuaries have been described.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.82\textheight]{misty_fjord}
+		\end{center}
+	\columnbreak
+	
+		\hangpara\highlight{Coastal plain}
+		
+		\hangpara\highlight{Bar-built}
+		
+		\hangpara\highlight{Delta}
+		
+		\hangpara\highlight{Fjord}
+		
+		\hangpara\highlight{Tectonic}
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny Misty Fjord, Alaska
+\end{frame}
+%
+\begin{frame}[t]{Coastal plain estuaries are flooded or \highlight{drowned river valleys.}}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.77\textheight]{chesapeake_bay}
+		\end{center}
+	\columnbreak
+	
+		\hangpara River or coast flooded after sea level rise.
+		
+		\hangpara Deep $\vee$-shape.
+		
+		\hangpara Salinity is major abiotic factor.
+		
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny Chesapeake Bay
+\end{frame}
+%
+\begin{frame}[t]{Bar-built estuaries have a sedimentary barrier between the lagoon and open ocean.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.77\textheight]{pamlico_sound}
+		\end{center}
+	\columnbreak
+	
+		\hangpara Flat, shallow bottom.
+		
+		\hangpara Wind is major abiotic factor.
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny Pamlico and Albemarle Sounds, NC.
+\end{frame}
+%
+\lecture{instructor}{instructor}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{bar_built_netherlands}}
+\begin{frame}[b]{}
+\tiny\textcolor{white}{Google Earth.}
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{coastal_vs_bar}}
+\begin{frame}[b]{}
+\tiny\textcolor{white}{Google Earth.}
+\end{frame}
+}
+%
+\lecture{student}{student}
+%
+\begin{frame}[t]{Delta estuaries have shallow deposits accumulated at the mouth of the river.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.77\textheight]{nile_delta}
+		\end{center}
+	\columnbreak
+	
+%		\hangpara Flat, shallow bottom.
+		
+		\hangpara Salinity is major abiotic factor.
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny Nile River delta, Egypt.
+\end{frame}
+%
+\lecture{instructor}{instructor}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mississippi_river_delta}}
+\begin{frame}[b]{}
+\tiny\textcolor{white}{NASA.}
+\end{frame}
+}
+%
+\lecture{student}{student}
+%
+\begin{frame}[t]{Fjords are formed by glacial scouring.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{fjord}
+	\end{center}
+
+	\vspace*{-\baselineskip}
+	
+	\hspace*{4em} Steep $\cup$-shape, with rock sill at seaward edge.\\
+	\hspace*{4em} Tides may be major abiotic factor.
+
+
+	\vskip0pt plus 1filll
+
+	\hfill\tiny Some fjord, some place.
+\end{frame}
+%
+\lecture{instructor}{instructor}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{fjords_norway}}
+\begin{frame}[b]{}
+\tiny\textcolor{white}{Google Earth}
+\end{frame}
+}
+%
+\lecture{student}{student}
+%
+\begin{frame}[t]{Tectonic estuaries have a variable morphology.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{san_francisco_bay}
+	\end{center}
+
+	\vspace*{-\baselineskip}
+	
+	\hspace*{4em} The major abiotic factor varies.
+	
+	\vskip0pt plus 1filll
+
+	\tiny San Francisco Bay.
+\end{frame}
+%
+\begin{frame}[t]{}
+	
+	\hangpara What are the environmental parameters common to most estuaries that you think might most affect community structure?
+
+	
+	\begin{center}
+		\includegraphics[width=\textwidth]{estuary}
+	\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,Pearson, inc.
+\end{frame}
+%
+\begin{frame}[t]{The parameters that most affect community structure are}
+
+	\begin{multicols}{2}
+
+		\onslide<1->\hangpara\HiddenWord{Salinity}
+	
+		\onslide<2->\hangpara\HiddenWord{Temperature}
+	
+		\onslide<3->\hangpara\HiddenWord{Water flow}
+		
+		\onslide<3->\hangpara\HiddenWord{}
+
+	\columnbreak
+	
+		\onslide<4->\hangpara\HiddenWord{Substrate}
+		
+		\onslide<5->\hangpara\HiddenWord{Turbidity \& light}
+		
+		\onslide<6->\hangpara\HiddenWord{}
+		
+		\onslide<6->\hangpara\HiddenWord{}
+
+	\end{multicols}
+	
+\end{frame}
+%
+\begin{frame}[t]{Compare a bar-built estuary to a fjord. Consider}
+
+	\hangpara morphology,
+	
+	\hangpara abiotic environment, and
+	
+	\hangpara vertical and horizontal zonation.
+
+\end{frame}
+%
+\begin{frame}[t]{Compare a bar-built estuary to a fjord.}
+
+	\begin{multicols}{2}
+
+		\onslide<1->\hangpara\textbf{Bar-built}
+		
+		\onslide<2->\hangpara\HiddenWord{shallow and flat}
+	
+		\onslide<3->\hangpara\HiddenWord{wind \& wave action}
+	
+		\onslide<4->\hangpara\HiddenWord{turbulent and turbid}
+		
+		\onslide<5->\hangpara\HiddenWord{temperature variable}
+
+		\onslide<6->\hangpara\HiddenWord{horizontally zoned}
+
+	\columnbreak
+	
+		\onslide<1->\hangpara\textbf{Fjord}
+		
+		\onslide<2->\hangpara\HiddenWord{deep and steep}
+		
+		\onslide<3->\hangpara\HiddenWord{limited wave action}
+		
+		\onslide<4->\hangpara\HiddenWord{calm and clear}
+		
+		\onslide<5->\hangpara\HiddenWord{temperature stratified}
+		
+		\onslide<6->\hangpara\HiddenWord{vertically zoned}
+
+	\end{multicols}
+	
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{salt_water_wedge}}
+\begin{frame}[b]{Salinity distribution depends on balance between tide and freshwater flow.}
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+}
+%
+%
+\begin{frame}[t]{Salinity distribution all affected by}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.79\textheight]{salinity_coriolis}
+		\end{center}
+	\columnbreak
+	
+		\hangpara Coriolis effect,
+		
+		\hangpara depth, and
+		
+		\hangpara evaporation.
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny Benjamin-Cummings.
+\end{frame}
+%
+\begin{frame}[t]{Salinity distribution affects organismal distribution in the estuary.}
+	
+	\vspace*{-\baselineskip}
+	
+		\begin{center}
+			\includegraphics[height=0.79\textheight]{salinity_organismal_distribution}
+		\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill.
+\end{frame}
+%
+\begin{frame}[t]{Osmoregulation maintains homeostasis.}
+
+	\hangpara\highlight{Hypertonic}
+
+	\hangpara\highlight{Hypotonic}
+	
+	\hangpara\highlight{Isotonic}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{gizzard_shad}}
+\begin{frame}[b]{}
+\hfill\tiny\textcolor{white}{Brian Gratwicke, Flickr Creative Commons.}
+\end{frame}
+}
+%
+\begin{frame}[t]{Organisms have different osmoregulation strategies.}
+	
+	\vspace*{-\baselineskip}
+	
+		\begin{center}
+			\includegraphics[height=0.82\textheight]{osmoregulation}
+		\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill.
+\end{frame}
+%
+\begin{frame}[t]{Sediment input affects substrate, turbidity, and light.}
+	
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.79\textheight]{louisiana_coast}
+		\end{center}
+	\columnbreak
+	
+		\hangpara Most estuaries have sediment bottom.
+		
+		\hangpara River flow and wave action affect turbidity.
+		
+		\hangpara How does turbidity affect GPP?
+		
+	\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny NASA.
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{outerbanks}}
+\begin{frame}[b]{\textcolor{white}{Describe the horizontal distribution of sediments.}}
+\tiny\textcolor{white}{Google Earth.}
+\end{frame}
+}
+\end{document}

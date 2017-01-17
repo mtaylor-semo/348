@@ -1,0 +1,342 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+%
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{calc}
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+%\lecture{instructor}{instructor}
+\lecture{student}{student}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
+\begin{frame}[b]{How many oceans are on Earth?}
+\tiny Image: Wikimedia Commons.
+\end{frame}
+}
+
+
+\lecture{instructor}{instructor}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
+\begin{frame}[t]{How many oceans are on Earth?}
+	\begin{tikzpicture}
+		\node [black, right] at (0.5,-3) {Pacific};
+		\node [black, right] at (10.5,-3) {Pacific};
+		\node [black, right] at (3.5,-2) {Atlantic};
+		\node [black, right] at (7.75,-4) {Indian};
+		\node [black, right] at (2.25,-0.1) {Arctic};
+		\node [black, right] at (8.5,-0.1) {Arctic};
+	\end{tikzpicture}
+
+\vskip0pt plus 1filll
+
+\tiny Image: Wikimedia Commons.
+
+\end{frame}
+}
+
+\lecture{student}{student}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{southern_ocean}}
+\begin{frame}[t]{\null}
+	\begin{tikzpicture}
+		\node [white, right] at (6,1.1) {Africa};
+		\node [white, left] at (2,-3) {S. America};
+		\node [white, right] at (10.1,-4) {Australia};
+		\node [white, right] at (8.1,-7) {New Zealand};
+		\node [black, right] at (5.4,-2.25) {Antarctica};
+		\node [white, right] at (5,-0.9) {Southern Ocean};
+		\node [white, right] at (5,-5.5) {Southern Ocean};
+	\end{tikzpicture}
+
+\vskip0pt plus 1filll
+
+\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepest_points}}
+\begin{frame}[b]{\textcolor{white}{What are the deepest points in the oceans?}}
+
+\pause
+	\begin{tikzpicture}[form/.style={circle, inner sep=0pt, minimum size=3mm},
+		info/.style={white, align=right}]
+
+		\node[form] (marianas) at (4.7,4.4) [fill=white] {};
+		\node[info] [right, align=left] at (marianas.east) {Marianas Trench\\ 10,911m};
+
+\pause
+		\node[form] (puerto) at (10,4.6) [fill=white] {};
+		\node[info] [right, align=left] at (puerto.east) {Puerto Rico\\ Tr. 8648 m};
+
+\pause
+		\node[form] (sunda) at (3.3,3.6) [fill=white] {};
+		\node[info] [left] at (sunda.west) {Sunda Trench\\ 7725m};
+
+		\node[form] (diamantina) at (3.3,2.5) [fill=white] {};
+		\node[info] [left, align=left] at (diamantina.south west) {Diamantina\\ Deep 8047 m};
+
+\pause
+		\node[form] (sandwich) at (11.5,1.3) [fill=white] {};
+		\node[info] [left] at (sandwich.west) {Sandwich Trench\\ 7235 m};
+
+\pause
+		\node[info] [left] at (12,6) {Litke Deep\\ 5449 m};
+		
+		\draw [->, white, ultra thick] (11.5,6.5) -- (12.4,7.5);
+
+
+	\end{tikzpicture}
+
+\tiny\textcolor{white}{Seafloor Topography V4.0, \textcopyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_tectonics}}
+\begin{frame}[b]{Ocean basins are formed by plate tectonics.}
+\tiny Image: \textcopyright\,McGraw-Hill
+\end{frame}
+}
+
+\begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+\begin{multicols}{2}
+\includegraphics[width=0.5\textwidth]{two_crust_types}
+\columnbreak
+%	\hangpara Continental Crust
+	
+%	\hangpara Oceanic Crust
+	
+	\hangpara Which type is thicker?
+	
+	\hangpara Which type is older?
+	
+	\hangpara Which type is denser?
+\end{multicols}
+
+\vskip0pt plus 1filll
+
+\tiny Image: \textcopyright\,McGraw-Hill
+
+\end{frame}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+\begin{multicols}{2}
+\includegraphics[width=0.5\textwidth]{two_crust_types}
+\columnbreak
+	\hangpara \highlight{Continental} crust
+
+	\hangpara\quad up to 50 km thick\\
+			\quad 3.8 billion years old\\
+			\quad less dense.
+	
+	\hangpara \highlight{Oceanic} Crust
+	
+	\hangpara\quad up to 5 km thick\\
+			\quad 200 million years old\\
+			\quad more dense.
+	
+\end{multicols}
+
+\vskip0pt plus 1filll
+
+\tiny Image: \textcopyright\,McGraw-Hill
+
+\end{frame}
+
+\lecture{student}{student}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_ridges_trenches}}
+\begin{frame}[b]{Plate movement creates ridges and trenches.}
+\tiny Tharp map of sea floor: \textcopyright\,Marie Tharp and Bruce Heezen, 1977.
+\end{frame}
+}
+
+\begin{frame}[t]{\highlight{Ridge push:} plates move apart at the ridges.}
+\begin{multicols}{2}
+\includegraphics[width=0.5\textwidth]{ridge_push}
+\columnbreak
+
+	\hangpara Magma rises, cools, and solidifies.
+
+	\hangpara Plates move 2–18 cm per year.
+		
+\end{multicols}
+
+\vskip0pt plus 1filll
+
+\tiny Image: \textcopyright\,McGraw-Hill
+
+\end{frame}
+
+\begin{frame}[t]{\highlight{Slab pull:} oceanic crust sinks at \highlight{subduction zones.}}
+\begin{multicols}{2}
+\includegraphics[width=0.5\textwidth]{slab_pull}
+\columnbreak
+
+	\vspace*{4\baselineskip}
+	
+	\hangpara Subduction zones create trenches.
+\end{multicols}
+
+\vskip0pt plus 1filll
+
+\tiny Image: \textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seismic_events}}
+\begin{frame}[b]{Seismic events occur at ridges and trenches.}
+\tiny Image: NASA (\url{http://denali.gsfc.nasa.gov/dtam/seismic/})
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{changing_basins}}
+\begin{frame}[b]{Tectonics has rearranged the ocean basins over time.}
+\hfill\tiny Image: \textcopyright\,Oxford University Press
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_sea}}
+\begin{frame}[b]{The \highlight{Tethys Sea} was formed about 300 MYA.}
+\tiny Image: Wikimedia Commons.
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_seaway}}
+\begin{frame}[b]{The \highlight{Tethys Seaway} allowed dispersal of tropical organisms among oceans.}
+
+\hangpara Oceans were connected until 10–15 MYA when Africa hit Eurasia, followed by Isthmus of Panama ca. 3 MYA.
+
+\tiny\hfill Image: Eocene reconstruction modified from \url{scotese.com})
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{oceans_current_configuration}}
+\begin{frame}[b]{Tropical organisms in different oceans are isolated by land and temperature.}
+\tiny Image: \textcopyright\,McGraw-Hill)
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
+\begin{frame}[b]{The \highlight{continental margin} consists of the continental shelf, slope and rise.}
+\tiny Image: \textcopyright\,McGraw-Hill)
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
+\begin{frame}[b]{The abyssal plain is between 3,000–6,000 m deep.}
+\tiny Image: \textcopyright\,McGraw-Hill)
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{global_continental_shelf}}
+\begin{frame}[b]{\textcolor{white}{The continental shelf represents about 7–8\% of the ocean surface area.}}
+\tiny\textcolor{white}{Seafloor Topography V4.0, \textcopyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+\end{frame}
+}
+
+\lecture{instructor}{instructor}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{los_angeles_seafloor}}
+\begin{frame}[b]{}
+\tiny\textcolor{white}{U.S. Geological Survey Pacific Sea-Floor Mapping Project.}
+\end{frame}
+}
+
+\lecture{instructor}{instructor}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{puerto_rico_trench}}
+\begin{frame}[b]{}
+\tiny\hfill\textcolor{white}{Puerto Rico Trench, U.S. Geological Survey Project PROBE Leg II.}
+\end{frame}
+}
+
+\lecture{student}{student}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_na}}
+\begin{frame}[b]{}
+
+\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_sa}}
+\begin{frame}[t]{}
+
+\vspace*{4\baselineskip}
+
+\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Why is the shelf broad on the east coast and narrow on the west coast?}}
+
+\vspace*{1\baselineskip}
+
+\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Will this difference affect marine life? If so, how? If not, why not?}}
+
+\vskip0pt plus 1filll
+
+\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+\end{frame}
+}
+
+
+\end{document}

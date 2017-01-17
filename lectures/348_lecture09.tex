@@ -1,0 +1,211 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage{chemfig}
+%\usepackage[version=4]{mhchem}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{animate}
+
+\usepackage{calc} % Needed for \widthof
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{global_continental_shelf}}
+\begin{frame}[b]{\textcolor{white}{Sublittoral ecosystems.}}
+\tiny\textcolor{white}{Seafloor Topography V4.0, \textcopyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+\end{frame}
+}
+
+\begin{frame}[t]{}
+\includegraphics[width=\textwidth]{wave_features}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+
+\begin{frame}[t]{Energy moves through the water. Waves do not move.}
+\includegraphics[width=\textwidth]{wave_motion}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+\begin{frame}[t]{Wind and shore alter wave shape.}
+\includegraphics[width=\textwidth]{wave_shape}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{surfer_joe}}
+\begin{frame}[b]
+
+\tiny\textcolor{white}{2010 Mavericks Competition photo by Shalom Jacobovitz, Wikimedia Commons.}
+\end{frame}
+}
+
+\begin{frame}[t]{\highlight{Rogue waves} are atypically large.}
+\vspace*{-\baselineskip}
+\begin{multicols}{2}
+
+	{\centering\includegraphics[width=0.49\textwidth]{rogue_wave_graph}
+
+	\includegraphics[width=0.45\textwidth]{rogue_wave_image}\par}
+
+\columnbreak
+	\hangpara At least 2$\times$ mean wave height.
+	
+	\hangpara 30 m rogues have been reported.
+	
+\end{multicols}
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tsunami_indonesia}}
+\begin{frame}[b]{\highlight{Tsunami} are high-energy, long wavelength seismic waves.}
+
+\hfill\tiny\textcopyright\,McGraw-Hill.
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tsunami_tohoku}}
+\begin{frame}[b]
+
+\hfill\tiny NOAA Center for Tsunami Research.
+\end{frame}
+}
+
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{subtidal_seal}}
+\begin{frame}[b]
+
+\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{abiotic_gradients}}
+\begin{frame}[t]{Abiotic gradients vary shallow to deep.}
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{sublittoral_divisions}}
+\begin{frame}[t]{Light penetration divides sublittoral into \highlight{infralittoral} and \highlight{circalittoral} zones.}
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+\begin{frame}[t]{Biotic gradients also vary with depth.}
+\begin{multicols}{2}
+	\includegraphics[height=0.8\textheight]{biotic_gradients}
+\columnbreak
+	\hangpara Larval recruitment is variable.
+	
+	\hangpara Competition for space is intense.
+	
+	\hangpara Primary consumer is sea urchins.
+	
+\end{multicols}
+\end{frame}
+
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{subtidal_diversity_hypothesis}}
+\begin{frame}[t]{Does light fully explain this pattern?}
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{subtidal_urchins_seastars}}
+\begin{frame}[t]
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{subtidal_trophic_cascade}}
+\begin{frame}[t]
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{subtidal_alternate_stable_states}}
+\begin{frame}[t]{Kelp-urchin interactions result in \highlight{alternate stable states.}}
+
+%\hfill\tiny\textcolor{white}{Sue Scott, Darwin Initiative, Flickr Creative Commons.}
+\end{frame}
+}
+
+\end{document}

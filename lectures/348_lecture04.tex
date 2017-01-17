@@ -1,0 +1,246 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+%\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+\documentclass[t,handout]{beamer}  %Use this for handouts.
+\usepackage{handoutWithNotes}
+\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{calc} % Needed for \widthof
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+%\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{plankton_vs_nekton}}
+\begin{frame}[b]
+\tiny\textcolor{white}{Betty White, Wikimedia Commons\hfill Public domain, NOAA Photo Library}
+\end{frame}
+}
+
+
+\begin{frame}[t]{Nekton swim independent of ocean current.}
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\hangpara\highlight{Holoepipelagic}
+		
+		\hangpara\highlight{Meroepipelagic}
+
+		\vfill
+		
+		\includegraphics[width=0.44\textwidth]{nekton_whale}
+	
+	\columnbreak
+	
+		\includegraphics[width=0.44\textwidth]{nekton_tuna}
+
+		\reflectbox{\includegraphics[width=0.44\textwidth]{nekton_nautilus}}
+		
+	\end{multicols}
+
+\tiny \hfill Tuna \textcopyright\,Pearson
+
+\tiny Whale \textcopyright\,Pearson Education\hfill Nautilus, Hans Hillewaert, Wikimedia Commons.
+\end{frame}
+
+\begin{frame}[t]{Plankton drift with the ocean current.}
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		\hangpara Phytoplankton
+		
+		\hangpara Zooplankton
+
+		\hangpara Mixoplankton
+
+		\vspace*{\baselineskip}
+		
+		\hangpara Net plankton
+
+		\hangpara Nanoplankton
+	
+	\columnbreak
+	
+		\hangpara\highlight{Holoplankton}
+
+		\hangpara\highlight{Meroplankton}
+		
+		\vspace*{\baselineskip}
+		
+		\includegraphics[width=0.40\textwidth]{plankton_net}
+
+	\end{multicols}
+
+\vskip0pt plus 1filll
+
+\hfill\tiny NOAA, Flickr Creative Commons.
+\end{frame}
+
+
+
+\begin{frame}[t]{Given the parameters at right:}
+	\begin{multicols}{2}
+		\hangpara Describe 2–3 nekton adaptations that increase success as predator or prey in this environment
+
+		\hangpara Do the same for plankton.
+	\columnbreak
+	
+		Lots of light\\
+		Clear water\\
+		No structure\\
+		Vast area\\
+		Water density\\
+		Low diversity
+	\end{multicols}
+
+\end{frame}
+
+\begin{frame}[t]{Fast swimming predators are energy efficient in dense medium.}
+
+	\includegraphics[width=\textwidth]{swimming_tuna}
+
+	\vskip0pt plus 1filll
+
+	\tiny Niall Kennedy, Flickr Creative Commons.
+\end{frame}
+
+\begin{frame}[t]{Slow swimming filter feeders are less efficient.}
+
+	\includegraphics[width=\textwidth]{feeding_anchovy}
+
+	\vskip0pt plus 1filll
+
+	\tiny \textcopyright,Monterey Bay Aquarium.
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{silvery_flying_fish}}
+\begin{frame}[b]
+\tiny Dan Irizarry, Flickr Creative Commons
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{transparent_pelagic_gastropod}}
+\begin{frame}[b]
+\tiny\textcolor{white}{Johnson Lab, Duke University, \url{http://sites.biology.duke.edu/johnsenlab/}}
+\end{frame}
+}
+
+\begin{frame}[t]{Nekton maintain buoyancy through different means.}
+	\begin{multicols}{2}
+
+		\includegraphics[width=0.49\textwidth]{buoyancy_bladders}
+
+		\vspace*{2\baselineskip}
+		
+		\includegraphics[width=0.49\textwidth]{buoyancy_shark}
+
+	\columnbreak
+	
+		\hangpara Swim bladders, lungs, air sacs
+		
+		\hangpara Fins and body shape
+		
+		\hangpara Lipids
+		
+		\hangpara Ions
+
+	\end{multicols}
+
+\end{frame}
+
+\begin{frame}[t]{Plankton maintain buoyancy through different means.}
+	\begin{multicols}{2}
+
+		\includegraphics[width=0.49\textwidth]{janthina}
+
+%		\vspace*{2\baselineskip}
+		
+%		\includegraphics[height=0.4\textheight]{Glaucus_atlanticus}
+
+	\columnbreak
+	
+		\hangpara Floatation devices
+		
+		\hangpara Surface area
+		
+		\hangpara Lipids
+		
+		\hangpara Ions
+
+	\end{multicols}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{Glaucus_atlanticus}}
+\begin{frame}[b]
+\hfill\tiny\textcolor{white}{Sylke Rohrlach, Wikimedia Commons}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{foraminifera}}
+\begin{frame}[b]
+\tiny\textcolor{white}{\textcopyright\,McGraw-Hill}
+\end{frame}
+}
+
+
+
+\end{document}

@@ -1,0 +1,225 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{calc}
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+%\lecture{instructor}{instructor}
+\lecture{student}{student}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marine_biology_intro}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mike_snake}}
+\begin{frame}[t,plain]
+\large
+\vspace{5ex}
+\hangpara\hspace{17em} Mike Taylor
+
+\hangpara\hspace{17em} RH 217
+
+\hangpara\hspace{17em} mtaylor@semo.edu
+
+\end{frame}
+}
+
+\begin{frame}[t]{You \highlight{earn} your grade with}
+	\begin{center}\large\begin{tabular}{@{}ll@{}}
+	Four 75-point exams & 60\% \\
+	Home/in-class Assignments & 20\% \\
+	5-in-5 Presentation & 20\% \\
+	\end{tabular}
+	\end{center}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{5in5_overview}
+}
+\begin{frame}[t]
+\end{frame}
+}
+
+\begin{frame}[t]{Your \highlight{objectives} for this course are to}
+	\hangpara learn basic terms and concepts,
+
+	\hangpara learn basic oceanographic processes,
+	
+	\hangpara relate oceanographic processes to biological processes, and
+
+	\hangpara develop a biological context for marine conservation.
+	
+	\pause
+	
+	\hangpara \highlight{I hope!}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cocos_jacks}}
+\begin{frame}[t]{What is the \highlight{marine} environment?}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mussel_research}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{beach_seining}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seagrass_transect}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_survey}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{noaa_aquarius}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rv_pelican}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rv_seward_johnson}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rv_flip_horizontal}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rv_flip_upright}}
+\begin{frame}[b]
+\tiny\href{http://www.youtube.com/watch?v=tQxQfQU_hsk}{Link to video}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rov_hercules}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rv_sealink}}
+\begin{frame}[t]
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{dsv_alvin}}
+\begin{frame}[t]
+\end{frame}
+}
+
+\lecture{instructor}{instructor}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{vent_community}}
+\begin{frame}[b]{\textcolor{white}{The Alvin discovered hydrothermal vent communities.}}
+
+\hfill \tiny \textcolor{white}{Ocean Networks Canada, Flickr, \ccbyncsa{2}}
+\end{frame}
+}
+
+
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{bathyscaphe_trieste}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepsea_challenger_above}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepsea_challenger_landed}}
+\begin{frame}[t]
+\end{frame}
+}
+
+
+\lecture{instructor}{instructor}
+
+\begin{frame}[t]{Your \highlight{homework} assignment is}
+	\hangpara Name all of the recognized oceans, and
+
+	\hangpara identify the deepest spot in each ocean, with depth (in meters).
+\end{frame}
+
+\end{document}

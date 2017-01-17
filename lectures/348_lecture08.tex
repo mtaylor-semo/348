@@ -1,0 +1,249 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage{chemfig}
+%\usepackage[version=4]{mhchem}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{animate}
+
+\usepackage{calc} % Needed for \widthof
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{biomass_density_depth}}
+\begin{frame}[t]{How can the deep sea benthos be so diverse?}
+
+%\vspace*{10\baselineskip}
+
+%\hangpara Yet, the deep sea benthos is very diverse. Why?
+\end{frame}}
+
+
+
+\begin{frame}[t]{\highlight{Stability-time} hypothesis. {\large (Sanders 1968)}}
+
+	\hangpara What is the importance of stability?
+
+	\hangpara What were the arguments against this hypothesis?
+
+\end{frame}
+
+\begin{frame}[t]{\highlight{Cropper/disturbance} hypothesis. {\large (Dayton \& Hessler 1972)}}
+
+	\hangpara What was the reasoning for this hypothesis?
+
+	\hangpara What were the arguments against this hypothesis?
+
+	\hangpara What are r- and K- life history strategies?\\ Why should predation lead to an r-strategy?\\ Why would most deep-sea organisms have a K-strategy?
+
+
+\end{frame}
+
+\begin{frame}[t]{\highlight{Species-area} hypothesis. {\large (Abele \& Walters 1979)}}
+
+	\hangpara What was the reasoning for this hypothesis?
+
+	\hangpara What was the major argument against this hypothesis?
+
+\end{frame}
+
+\begin{frame}[t]{\highlight{Patch dynamics} hypothesis. {\large (Grassle \& Sanders 1973)}}
+
+	\hangpara What do you think is meant by a patchy habitat?
+
+	\hangpara What do you think is meant by dynamics?
+	
+	\hangpara How could this explain diversity in the deep sea?
+
+\end{frame}
+
+\begin{frame}[t]{\highlight{Spatial heterogeneity} means the habitat is not uniform.}
+
+	{\centering
+	\includegraphics[width=0.75\textwidth]{spatial_heterogeneity_abyssal_plain}\par}
+
+	\vspace*{-\baselineskip}\hangpara North Atlantic abyssal plain (4800 m depth). Translucent sea cucumbers are feeding on green detritus from surface.
+
+\vskip0pt plus 1filll
+
+\hfill\tiny\url{http://www.oceanlab.abdn.ac.uk/esonet/porcupine.php}
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deep_sea_benthic_diversity}}
+\begin{frame}[b]
+
+\hfill\tiny After Rex 1981, Annu. Rev. Ecol. Syst. 122: 331.
+\end{frame}}
+
+
+
+%\begin{frame}[t]{Develop a hypothesis to explain diversity at intermediate depths.}
+%
+%	{\centering
+%	\includegraphics[width=0.90\textwidth]{deep_sea_benthic_intermediate_diversity}\par}
+%
+%	\vspace*{-\baselineskip}
+%	\hangpara Use a combination of previous hypotheses and your own ideas.
+%	
+%	\hangpara Consider biomass, age, stability, competition, predation, sediment size, disturbance and patch dynamics, spatial heterogeneity, etc.
+%
+%\vskip0pt plus 1filll
+%
+%\hfill\tiny After Rex 1981, Annu. Rev. Ecol. Syst. 122: 331.
+%\end{frame}
+
+\begin{frame}[t]{Pull out a sheet of paper. In groups\dots}
+
+	\vspace*{-\baselineskip}
+
+	\begin{multicols}{2}
+
+	\includegraphics[width=0.49\textwidth]{deep_sea_benthic_intermediate_diversity2}
+
+	\columnbreak
+	
+	\hangpara Choose three factors from previous hypotheses or your own ideas.
+	
+	\hangpara Consider biomass, age, stability, competition, predation, sediment size, disturbance, patch dynamics, spatial heterogeneity, etc.
+
+	\hangpara Develop a unique hypothesis by explaining how each factor contributes to benthic diversity. 
+	
+	\hangpara Explain how each factor contributes to diversity. 
+
+	\end{multicols}
+
+\end{frame}
+
+
+\begin{frame}[t]{What is the scientific consensus?}
+
+\hangpara \rule{2.5in}{0.4pt}
+
+\vspace*{2\baselineskip}
+
+\hangpara \rule{2.5in}{0.4pt}
+
+\vspace*{2\baselineskip}
+
+\hangpara \rule{2.5in}{0.4pt}
+
+\end{frame}
+
+
+
+
+\lecture{instructor}{instructor}
+
+\begin{frame}[t]{What is the scientific consensus?}
+
+\hangpara\highlight{Spatial heterogeneity}\pause
+
+\vspace*{2\baselineskip}
+
+\hangpara\highlight{Patch dynamics}
+
+\vspace*{2\baselineskip}
+
+\hangpara\highlight{Sediment size}\pause
+
+\end{frame}
+
+
+
+\lecture{student}{student}
+\begin{frame}[t]{Many mesopelagic organisms make a \highlight{diel vertical migration.}}
+
+	{\centering
+	\includegraphics[width=\textwidth]{diel_vertical_migration}\par}
+
+\end{frame}
+
+
+\begin{frame}[t]{Can nutrients that reach the deep sea be returned to the surface.}
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{upwelling_global}}
+\begin{frame}[b]{\highlight{Upwelling} returns nutrients to surface.}
+
+\hfill\tiny\textcopyright\,McGraw-Hill
+\end{frame}}
+
+
+\begin{frame}[t]{Upwelling is driven by winds and Ekman transport.}
+
+{\centering
+\includegraphics[height=0.80\textheight]{upwelling_equatorial}\par}
+
+\vskip0pt plus 1filll
+
+\hfill\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+
+
+\end{document}

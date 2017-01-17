@@ -1,0 +1,343 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+%\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage[version=4]{mhchem}
+%\usepackage{siunitx}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{4cm}{0.4pt}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tide_intro}}
+\begin{frame}[b]{Tide goes in, tide goes out\dots You can't explain that.}
+
+\tiny\textcolor{white}{John Arnold, Flickr Creative Commons.\hfill\href{http://youtu.be/wb3AFMe2OQY}{Link to Video: 1:50}}
+\end{frame}
+}
+
+\begin{frame}[t]{Tides are the regular movement of sea water due to gravity.}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{tide_mechanics}
+	\end{center}
+
+\columnbreak
+
+	\hangpara Moon and earth rotate as one around a common point.
+
+	\hangpara Earth also rotates around it’s own axis.
+
+	\hangpara Wobble causes bulge opposite of moon.
+
+	\hangpara Moon gravity causes opposing bulge.
+\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+\begin{frame}[t]{The tidal cycle lasts just longer than 24 hours.}
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[height=0.85\textheight]{tide_cycle} 
+	\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+\begin{frame}[t]{One of three tidal patterns are possible.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{tidal_patterns} 
+	\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tidal_patterns_distribution}}
+\begin{frame}[b]{Different patterns occur in different regions.}
+\hfill\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+}
+
+\begin{frame}[t]{Tides vary weekly between \highlight{spring} and \highlight{neap} tides.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{tide_spring_neap} 
+	\end{center}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rocky_intertidal_intro}}
+\begin{frame}[b]{Rocky Intertidal Communities}
+\tiny\textcolor{white}{Source unknown.}
+\end{frame}
+}
+
+
+\begin{frame}[t]{The rocky intertidal has three zones.}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{rocky_intertidal_zones}
+	\end{center}
+
+\columnbreak
+
+	\hangpara\highlight{Supralittoral fringe}\\
+	\hspace*{1em}splash zone\\
+	\hspace*{1em}periwinkles\\
+	\hspace*{1em}encrusting algae and lichens.
+	
+
+	\hangpara\highlight{Midlittoral zone}\\
+	\hspace*{1em}greatest diversity overall\\
+	\hspace*{1em}barnacles and mussels dominate.
+
+	\hangpara\highlight{Infralittoral zone}\\
+	\hspace*{1em}aka \highlight{sublittoral fringe}\\
+	\hspace*{1em}brown macroalgae dominate.
+
+\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rocky_zones_identified}}
+\begin{frame}[b]{}
+\hfill\tiny Bcasterline, Wikimedia, Public Domain.
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rocky_intertidal_zonation}}
+\begin{frame}[b]{What biotic and abiotic factors cause zonation?}
+\tiny\textcolor{white}{Ken Clifton, Flickr Creative Commons.}
+\end{frame}
+}
+
+
+\begin{frame}[t]{The primary causes of zonation are}
+
+	\begin{multicols}{2}
+
+		\onslide<1->\hangpara\textbf{Abiotic}
+		
+		\onslide<2->\hangpara\HiddenWord{Dessication}
+	
+		\onslide<3->\hangpara\HiddenWord{Temperature (\& light)}
+	
+		\onslide<4->\hangpara\HiddenWord{Wave action}
+		
+		\onslide<4->\hangpara\HiddenWord{}
+
+	\columnbreak
+	
+		\onslide<1->\hangpara\textbf{Biotic}
+		
+		\onslide<5->\hangpara\HiddenWord{Competition}
+		
+		\onslide<6->\hangpara\HiddenWord{Predation, inc. grazing}
+		
+		\onslide<6->\hangpara\HiddenWord{}
+		
+		\onslide<6->\hangpara\HiddenWord{}
+
+	\end{multicols}
+	
+\end{frame}
+
+\begin{frame}[t]{Abiotic and biotic factors interact to create community structure.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{rocky_barnacles_example} 
+	\end{center}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+\begin{frame}[t]{\highlight{Keystone species} increase diversity in the rocky intertidal.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{rocky_keystone_species} 
+	\end{center}
+
+	\vspace*{-0.5\baselineskip}
+	
+	\textit{Pisaster} seastars are a rocky intertidal keystone species.
+	
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rocky_pisaster}}
+\begin{frame}[b]{}
+\tiny\hfill\textcolor{white}{Source unknown.}
+\end{frame}
+}
+
+\begin{frame}[t]{\highlight{Patch dynamics} is influenced by the size of the patch.}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{rocky_patch_dynamics} 
+	\end{center}
+
+
+\vskip0pt plus 1filll
+
+\hfill\tiny\textcopyright\,Oxford
+
+\end{frame}
+
+
+\begin{frame}[t]{Communities can switch between \highlight{alternate stable states.}}
+
+	\vspace*{-\baselineskip}
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{rocky_alternate_stable_states} 
+	\end{center}
+
+
+\vskip0pt plus 1filll
+
+\hfill\tiny\textcopyright\,Oxford
+
+\end{frame}
+
+
+
+\begin{frame}[t]{Compare the rocky intertidal and subtidal zones.}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+
+	\vspace*{-\baselineskip}
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{rocky_compare}
+	\end{center}
+
+\columnbreak
+
+	\hangpara Discuss the abiotic and biotic factors that influence dynamics at the upper limit and at the lower limit of each community. 
+	
+
+	\hangpara Do you observe any trends or commonalities in the types of factors that control the upper and lower limits of these communities? Explain.
+
+\end{multicols}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,McGraw-Hill
+
+\end{frame}
+
+
+\end{document}

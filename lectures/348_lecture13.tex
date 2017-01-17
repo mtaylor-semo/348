@@ -1,0 +1,145 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+%\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage[version=4]{mhchem}
+%\usepackage{siunitx}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{4cm}{0.4pt}}{#1}%
+}
+
+\newcommand\skiptobottom{%
+	\vskip0pt plus 1filll%
+}
+
+\begin{document}
+
+\lecture{student}{student}
+
+\begin{frame}[t]{What are the sources of GPP in an estuary?}
+
+	\begin{multicols}{2}
+	
+		\includegraphics[width=0.45\textwidth]{mangrove_aerial_view}\\
+		\includegraphics[width=0.45\textwidth]{algal_flat}
+	\columnbreak
+	
+		\hangpara\highlight{Outwelling hypothesis}
+		
+		\hangpara How is NPP exported from the estuary?
+		
+	\end{multicols}
+	
+\end{frame}
+%
+\begin{frame}[t]{Estuaries have \highlight{microbial loops.}}
+	\includegraphics[width=\textwidth]{estuary_microbial_loop}
+
+	\skiptobottom
+
+	\tiny\textcopyright\,Benjamin Pearson
+	
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_zonation_intro}}
+\begin{frame}[b]{Marsh zonation is driven by biotic and abiotic processes.}
+\hfill\tiny\textcolor{green4}{Source unknown.}
+\end{frame}
+}
+%
+\begin{frame}[t]{Marshes have \highlight{high marsh} and \highlight{low marsh} zones.}
+	\includegraphics[width=\textwidth]{high_low_marsh}
+
+	\skiptobottom
+
+	\tiny\textcopyright\,Benjamin Pearson
+	
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_zonation_plants}}
+\begin{frame}[b]{Biotic and abiotic interactions create plant zones within the low and high marshes.}
+\tiny\textcopyright\,Benjamin Pearson
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_zonation_abiotic}}
+\begin{frame}[b]{}
+\tiny Pennings and Bertness 2001. 
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_patch_dynamics}}
+\begin{frame}[b]{\highlight{Patch dynamics} are regulated by biotic and abiotic processes.}
+\tiny Pennings and Bertness 2001. 
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_positive_interactions}}
+\begin{frame}[b]{Plants and animals can have \highlight{positive interactions} that promote their abundance.}
+\tiny Pennings and Bertness 2001. 
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marsh_predator_prey}}
+\begin{frame}[b]{Predators affect the distribution of prey in the marsh.}
+\tiny\textcopyright\,Benjamin Pearson
+\end{frame}
+}
+%
+\end{document}

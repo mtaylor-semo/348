@@ -1,0 +1,141 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 03}
+\author{Ocean Circulation and Larval Ecology}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}\marginnote{\textbf{Study:} pgs. 24--38, 109-111, 141--145, 155--159 (larval ecology). Review basic ecology principles on 46–56.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+neritic \\
+oceanic \\
+pelagic \\
+epipelagic \\
+mesopelagic \\
+bathypelagic \\
+photic zone \\
+disphotic zone\\
+aphotic zone\\
+littoral \\
+intertidal \\
+sublittoral \\
+benthic \\
+bathyal \\
+abyssal \\
+gyre \\
+Coriolis Effect\\
+Ekman transport\\
+Reynolds number\\
+larvae (singular: larva) \\
+planktotrophic larvae \\
+lecithotrophic larvae \\
+nonpelagic larvae 
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+
+\item
+  Know the basic zones of the ocean. They will form the framework of our
+  community discussions.
+
+\item
+  If you were to look at a band of tropical water (surface temperature
+  of 25°C and higher) across an ocean basin, the band would be wider
+  along the west side of the basin and narrower along the east side of
+  the basin. What explains this phenomenon?
+
+\item
+  Are the photic, disphotic, and aphotic zones of the ocean synonyms for
+  other names of the oceans zones? For example, is the photic zone
+  synonymous with the epipelagic zone? Are some of the zones
+  functionally equivalent? Explain.
+  
+\item Describe how the global wind patterns are formed, based on thermal input from the sun and from the Coriolis effect. You do have to explain what causes the Coriolis effect itself.
+
+\item Describe how the winds and Coriolis effect combine to form the major oceanic current gyres, as well as major surface wind patterns.
+
+\item Why does water move at a right angle (90°) relative to the direction of wind? What is this phenomenon called?
+
+\item List and briefly explain some reasons why ocean circulation (surface currents) matters to the biology of some marine organisms.
+
+\item Explain the relationship between the Reynolds number, organism size, and the ease with which an organism can move through water.
+
+\item
+  The density of water creates a new type of community not found in
+  terrestrial ecosystems. What is this community? What types of
+  adaptations evolved in other communities to take advantage of this new
+  community? (Hint: think trophic). Provide several examples of the
+  adaptations.
+
+\item
+  Compare and contrast the three types of larval development. Consider
+  larval dispersal ability, larval mortality, clutch size (number of
+  offspring produced), species distribution, and population genetic
+  structure of the species. Relate population genetic structure to the
+  potential for speciation to occur (this will take some thought).
+
+ \item
+  Compare and contrast the three types of larval development. Consider
+  larval dispersal ability, larval mortality, clutch size (number of
+  offspring produced), species distribution, and population genetic
+  structure of the species. Relate population genetic structure to the
+  potential for speciation to occur (this will take some thought).
+
+\item At what latitudes (speaking generally) did the lecithotrophic larval strategy become more common for many marine organisms?  Why?
+
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,143 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 12}%\hfill}
+\author{Soft-Bottom Intertidal and Estuaries}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}\marginnote{\textbf{Read:} 41--43, 96--97, 375--391, 394--407\\\noindent\textbf{Questions:} pg 46, 7--10; pg 412: 10, 15.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+sediment flat (mudflat)\\
+sand\\
+silt\\
+clay\\
+mud\\
+infauna\\
+meiofauna\\
+burrowing animals\\
+aerobic zone\\
+anaerobic zone\\
+bioturbation\\
+estuary\\
+coastal plain estuary\\
+drowned river valley\\
+bar-built estuary\\
+delta\\
+fjord\\
+tectonic estuary\\
+saltwater wedge\\
+stenohaline\\
+euryhaline\\
+brackish\\
+osmoregulation\\
+hypertonic\\
+hypotonic\\
+isotonic\\
+hypoosmotic\\
+hyperosmotic\\
+osmoconformer\\
+osmoregulator
+\end{multicols}
+
+\section{Concepts}
+
+You should \emph{write} clear and concise answers to each question in the Concepts section.  The questions are not necessarily independent.  Think broadly across lectures to see ``the big picture.'' 
+
+\begin{enumerate}
+
+	\item What is mud?  How do sand, silt and clay differ in their water retention ability?  What about ease for an organism to move through any of these different sediments?
+
+	\item Describe how the shape of a burrow in the substrate causes water to flow through the burrow.
+	
+	\item Compare and contrast the five types of estuaries based on geomorphology.  You should discuss how they are formed, how they differ in cross-sectional profile (depth, width, etc), and the relative influence of river input, tides and wave action, and wind.
+
+\item
+  What is the single physical process that most influences community
+  structure in a bar-built estuary? A coastal plain estuary? A delta? A fjord? A
+  tectonic estuary? Explain why for each.
+
+\item
+  Diagram the salinity gradient in a ``typical'' estuary during high
+  tide and low riverine input, and low tide and high riverine input.
+  Indicate the region in which organisms must have the greatest
+  tolerance for salinity variation.
+
+\item
+  Explain the relationship between wind and GPP in a bar-built estuary.
+  Would you expect the relationship to differ in a coastal-plain
+  estuary? Explain why or why not.
+
+	\item How does salinity vary in a ``typical'' estuary such as a coastal plain or bar-built estuary.  Explain and illustrate along a gradient from the river mouth to the open ocean.  Be sure to also explain/show how salinity may vary from the water surface to the estuary bottom.  In addition, how does the Coriolis effect alter salinity from side to side across an estuary?  You should be able to answer this whether the estuary is in the northern hemisphere or the southern hemisphere.  
+
+	\item Explain how tides and rainfall can alter the salinity gradients you described above.
+
+	\item We did not specifically discuss isotonic, hypoosmotic, etc.  Use the glossary in your text and other sources to look up the meanings of these terms.
+
+	\item Are most marine organisms osmoconformers or osmoregulators?  
+
+	\item Explain how evaporation can alter salinity in an estuary?  In what types of estuaries (coastal plain, bar-built, etc.) is evaporation going to show the most pronounced influence on salinity?  At what latitudes?
+
+	\item Explain how salt tolerance of organisms determines their distribution in an estuary. 
+
+	\item Be able to explain which direction water will move (into or out of) for an organism that is isotonic, hypoosmotic, and hyperosmotic relative to the surrounding seawater.
+
+	\item With regards to salinity, what are the challenges that an organism living in an estuary has to face that is different than a closely related organism that lives in the open ocean?  Explain the different ways in which organisms can possibly deal with rapidly changing salinity levels.
+
+	\item Compare an osmoregulator to an osmoconformer.  Compare in words and in diagram the osmoregulation abilities of a crab, a polychaete worm, and a typical fish.
+
+	\item Explain and diagram a sediment gradient in a ``typical'' estuary.  Do the same for POM. How does this sediment gradient develop?  How does this influence the types of organisms that may be present at any given point along the sediment gradient?
+
+
+\end{enumerate}
+
+\end{document}

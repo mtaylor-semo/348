@@ -1,0 +1,127 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 08}
+\author{Deep-Sea Communities}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 28, 466--477. Review r- and K-life history strategies from any reliable source. Review the small amount of information on intermediate disturbance on page 73. Review the handout from class on the three hypotheses proposed to explain deep-sea benthic diversity.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+r-type life history strategy \\
+K-type life history strategy \\
+depth gradient \\
+latitudinal gradient \\
+intermediate disturbance \\
+patch dynamics \\
+spatial heterogeneity \\
+sediment size \\
+diel vertical migration \\
+coastal upwelling\\
+equatorial upwelling\\
+Antarctic upwelling
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+
+\item
+  How does deep sea biomass correlate with the nutritional quality of
+  marine snow.
+  
+\item
+  How does density correlate with depth in deep-sea benthic
+  (bottom-living) communities?
+
+\item
+  We discussed three important hypotheses that were proposed between
+  1968 and 1979 to explain high species diversity in deep-sea benthic
+  communities. Briefly explain each hypothesis, and then explain why
+  each does not adequately explain deep-sea benthic diversity.
+
+\item
+  We discussed three important that were proposed between 1968 and 1978
+  to explain high species diversity in deep-sea benthic communities.
+  However, none of those hypotheses adequately explain deep-sea benthic
+  diversity. Following diversity studies in the 1980s and 1990s, a
+  hypothesis was developed that does seem to explain diversity. Describe
+  the hypothesis and the interaction of the three factors that have been
+  proposed to explain deep-sea benthic diversity.
+
+\item
+  Diversity gradients in deep-sea benthic communities have been observed
+  both for depth and for latitude. What hypothesis or hypotheses have
+  been proposed to explain these gradients?
+
+\item
+  Explain diel vertical migration. Where do they come from? Where do 
+  they go? Why do they do it? When do they do it?
+  
+\item
+  How does the mesopelagic nekton community contribute to the transfer
+  of NPP from the epipelagic to the mesopelagic (and deeper)?
+  
+\item
+  Name and describe the difference between the three types of upwelling. Be
+  able to tell where each type is typically found. How does upwelling affect
+  the distribution of nutrients??
+  
+\item
+  Describe how any one of the three types of upwelling occurs. Include the 
+  proper oceanographic forces that contribute to upwelling.
+  
+\end{enumerate}
+
+
+\end{document}

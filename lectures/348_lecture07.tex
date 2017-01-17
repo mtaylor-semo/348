@@ -1,0 +1,262 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage{chemfig}
+%\usepackage[version=4]{mhchem}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{animate}
+
+\usepackage{calc} % Needed for \widthof
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+\begin{frame}[t]{Ridde me this, Nemo.}
+
+	\hangpara Read pages 473--477 and handout.
+
+	\hangpara Discuss the relative merits of the three hypotheses that attempt to explain the relatively high species diversity of the deep-sea benthos.
+
+	\hangpara Typed for Thursday (no late acceptances).
+	
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cave_vs_bathypelagic_fishes}}
+\begin{frame}[b]{Why are cave fishes white but bathypelagic fishes black?}
+
+\tiny Hoosier cave fish, Prosanta Chakrabarty, Wikimedia Commons.\hfill Gulper eel, Alexei Orlvo, Wikimedia Commons.
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{epipelagic_nutrient_sources}}
+\begin{frame}[t]{How much NPP reaches deep sea from epipelagic?}
+\end{frame}}
+
+\begin{frame}[t]{Whale fall is a staged source of nutrients.}
+
+\vspace*{-\baselineskip}
+
+	\begin{multicols}{2}
+		{\centering
+		\includegraphics[height=0.82\textheight]{whale_fall}\par}
+
+	\columnbreak
+
+		\hangpara scavenger
+
+		\hangpara reef
+
+		\hangpara enriched sediment
+
+		\hangpara sulfide
+
+	\end{multicols}
+
+%\vskip0pt plus 1filll
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{whale_fall_enriched_reef}}
+\begin{frame}[b]
+
+\tiny\hfill\textcolor{white}{Craig Smith NOAA, Wikimedia Commons.}
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{boneworm}}
+\begin{frame}[b]
+
+\tiny\textcolor{white}{Robert Vrijenhoek, Creative Commons, \url{http://chess.myspecies.info/}.\hfill\href{https://www.youtube.com/watch?v=rdI3eFrTGs8}{Link to Video}}
+
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{boneworm_roots}}
+\begin{frame}[b]{Boneworms have heterotrophic symbiotic bacteria that decompose bone.}
+
+
+\tiny\textcopyright\,Levinton, Oxford Press.
+\end{frame}}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hydrothermal_vent_black_smoker}}
+\begin{frame}[t]
+
+\vspace*{3\baselineskip}
+
+\hspace*{65mm}\hangpara\parbox{49mm}{\raggedright \large\textcolor{white}{Seafloor spreading creates hydrothermal vents.\\[\baselineskip]
+Super-heated water has reduced compounds.}}
+
+\vskip0pt plus 1filll
+
+\tiny\textcolor{white}{Ocean Networks Canada, Flickr Creative Commons.}
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hydrothermal_vents_global_distribution}}
+\begin{frame}[b]{Hydrothermal vents and cold seeps are sources of \textsc{npp}.}
+
+\tiny\hfill German et al. 2011. PLoS ONE 6(8): e23259.
+\end{frame}}
+
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{chemosynthesis}}
+\begin{frame}[b]{Bacterial chemosynthesis oxidizes reduced compounds to release energy.}
+
+\tiny\textcopyright\,Pearson Education.
+\end{frame}}
+
+\begin{frame}[t]{Bacteria are primary producers for vent and cold seep communities.}
+
+\vspace*{-\baselineskip}
+
+	\begin{multicols}{2}
+		{\centering
+		\includegraphics[height=0.82\textheight]{vent_community_mosaic}\par}
+
+	\columnbreak
+
+		\hangpara Free-living bacteria
+
+		\hangpara Symbiotic bacteria
+
+	\end{multicols}
+
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{vent_community}}
+\begin{frame}[b]{\textcolor{white}{NPP supports rich vent community.}}
+
+\tiny\hfill\textcolor{white}{Ocean Networks Canada, Flickr Creative Commons.}
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cold_seep_community}}
+\begin{frame}[b]{\textcolor{white}{NPP supports rich cold seep community.}}
+
+\tiny\textcolor{white}{NOAA Photo Library, Flickr Creative Commons.}
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{vent_community_dead}}
+\begin{frame}[b]{\textcolor{white}{Vent communities last only a few hundred years.}}
+
+\tiny\textcolor{white}{Ocean Networks Canada, Flickr Creative Commons.}
+\end{frame}}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{sediment_size}}
+\begin{frame}[b]{Sediment size affects the benthic community.}
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}}
+
+
+\begin{frame}[t]{What about other deep sea benthic communities?}
+
+\vspace*{-\baselineskip}
+
+	\begin{multicols}{2}
+		{\centering
+		\includegraphics[width=0.49\textwidth]{tripod_fish}
+		
+		\vspace{0.5\baselineskip}
+	
+		\includegraphics[width=0.49\textwidth]{deep_sea_cucumbers}
+		\par}
+
+	\columnbreak
+
+		\hangpara What type of sediment is present?
+
+		\hangpara Is the sediment nutrient rich or poor?
+		
+		\hangpara What type of infauna is present?
+		
+		\hangpara What is their feeding mechanism?
+
+	\end{multicols}
+
+\end{frame}
+
+\begin{frame}[t]{Consider what you know about marine snow.}
+
+\hangpara How do you think the vertical distribution of nutrients from the surface downward affects the vertical distribution of biomass and density of individuals?
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{biomass_density_depth_student}}
+\begin{frame}[t]{Plot biomass and density as a function of depth.}
+
+\end{frame}}
+
+\lecture{instructor}{instructor}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{biomass_density_depth}}
+\begin{frame}[t]{Both biomass and density decrease with depth.}
+
+\vspace*{10\baselineskip}
+
+\hangpara Yet, the deep sea benthos is very diverse. Why?
+\end{frame}}
+
+
+
+\end{document}

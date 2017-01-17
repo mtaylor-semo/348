@@ -1,0 +1,118 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 13}%\hfill}
+\author{Salt Marshes}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 385--400, plus salt marsh handout given in class and available online.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+low marsh \\
+high marsh \\
+creek \\
+salt pan \\
+wrack \\
+cordgrass \\
+salt meadow hay \\
+black rush \\
+marsh elder
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+\item
+  You should know the four major marsh plants above as they define the
+  zones of a typical New England salt marsh.
+\item
+  Explain the distinction between the low marsh and the high marsh.
+\item
+  What are the two primary types of interactions that, taken together,
+  explain zonation in a New England salt marsh?
+\item
+  Explain how ice and wrack and create patches in a a northern marsh.
+  Why are they important for patch creation in northern marshes but not
+  generally in southern marshes?
+\item
+  Explain patch dynamics in a salt marsh. Include the role of patch size
+  and the physical stress of a patch, and whether the patch forms in the
+  low marsh or the high marsh. Compare and contrast patch dynamics in a
+  salt marsh with patch dynamics in the deep sea and the rocky
+  intertidal. How do they differ in successional patterns? How are they
+  similar?
+\item
+  Explain why salinity has a greater impact in southern marshes compared
+  to northern marshes? Also consider large bare patches in a northern
+  marsh compared to the surrounding vegetated areas.
+\item
+  Explain how physical and competitive forces interact to explain
+  zonation of the four major marsh plant species in a New England marsh.
+\item
+  Explain how positive interactions between marsh species also
+  contribute to zonation in a New England salt marsh.
+\item
+  Why is only cordgrass found in the low marsh?
+\item
+  How do predators influence the distribution of prey species in a
+  marsh?
+\item
+  Explain the physical and biotic factors that influence the gradient
+  distribution of oxygen in the sediment of a salt marsh.
+\item
+  Explain how salt-tolerant species of plants can facilitate the
+  recolonization of a patch by the dominant plant species.
+\end{enumerate}
+
+
+\end{document}

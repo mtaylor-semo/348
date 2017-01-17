@@ -1,0 +1,98 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+\usepackage[version=4]{mhchem}
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 14}%\hfill}
+\author{Ocean Acidification: Cause}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 32--27, 271--272, 448--450, 582--584, plus Hoegh-Guldberg et al. 2007, available on the course website.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+ocean acidification \\
+pH \\
+bicarbonate buffering system \\
+\ce{CO3^{2-}} (carbonate) \\
+\ce{HCO3^{-}} (bicarbonate) \\
+aragonite \\
+$\Omega$ \\
+rugosity \\
+fecundity 
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+\item Recognize and write equilibrium equation for the bicarbonate buffering system. Explain how it works to buffer pH.
+
+\item Explain how addition of \ce{CO2} to the atmosphere increases ocean acidity.
+
+\item In the bicarbonate buffering equation, identify the course of {H+} ions (protons) most responsible for ocean acidification.
+ 
+\item What value of $\Omega$ indicates the water is saturated with aragonite? What is the optimum value of $\Omega$ for marine organisms that produce calcium carbonate structures?
+
+\item Identify the source of carbonate for the bicarbonate buffering equation.
+
+\item How have aragonite levels changed in the ocean since the 1700s. Explain how this change relates to pH change in the oceans.
+
+\item Explain how the Paleocene-Eocene mass coral extinction provides evidence for a possible mass extinction of modern corals if pH continues to decrease.
+
+\item Understand how to interpret the figure on climate change and ecological feedback from Hoegh-Guldberg et al. 2007.  I’m just saying\dots.
+
+\item Explain how change in coral cover and grazing can change a reef between coral-dominated and algal-dominated states.
+
+
+\end{enumerate}
+
+
+\end{document}

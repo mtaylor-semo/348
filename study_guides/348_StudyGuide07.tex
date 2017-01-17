@@ -1,0 +1,141 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[nofonts, letterpaper]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{img/}} % set of paths to search for images
+  
+\usepackage{fontspec}
+  \setmainfont[Ligatures={Common,TeX},Numbers={Proportional}]{Linux Libertine O}
+  \setsansfont{Linux Biolinum O}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{multicol} % multiple column layout facilities
+%\usepackage{hyperref}
+%\usepackage{fancyvrb} % extended verbatim environments
+%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Change the header to shift the title to the left side of the page. 
+% Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
+{\fancyhead[RE,RO]{\scshape{\newlinetospace{\plaintitle}}\hfill\thepage}}
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{1.0pc}%
+  \setlength{\JustifyingParindent}{1.0pc}%
+  \setlength{\parindent}{1pc}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pt}%
+  \setlength{\JustifyingParindent}{0.5pc}%
+  \setlength{\parindent}{0.5pc}%
+  \setlength{\parskip}{0pt}%
+}
+
+\makeatother
+
+\title{Study Guide 07}
+\author{Deep-Sea Communities}
+
+\date{} % without \date command, current date is supplied
+
+\begin{document}
+
+\maketitle	% this prints the handout title, author, and date
+
+%\printclassoptions
+
+\section{Vocabulary}
+\marginnote{\textbf{Study:} pgs. 477--487.}
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
+whale fall \\
+marine snow \\
+chemosynthesis \\
+endosymbiosis \\
+hydrothermal vent \\
+cold seep \\
+sand \\
+silt \\
+clay \\
+mud 
+\end{multicols}
+
+\section{Concepts}
+
+\begin{enumerate}
+
+\item
+  What happens to the nutritional quality of marine snow as it descends
+  from the epipelagic to the abyssal plain. Why?
+
+\item
+  What are the stages of succession that have been described for whale
+  fall communities? Name and describe each stage, in the order of
+  occurrence from first to last. Include approximately the length (time) of each stage.
+
+\item
+  Briefly explain how plate tectonics relates to the formation of
+  hydrothermal vent communities. What underwater geological feature
+  related to tectonics is associated with hydrothermal vents? In other words,
+  where would you go look for vent communities?
+  
+\item 
+  How does plate tectonics explain why
+  hydrothermal vent communities are temporary (100s of years)?
+  
+\item
+  What are the primary differences between hydrothermal vents and cold
+  seeps. Consider energy sources, temperature, diversity, and endemism.
+
+%\item
+%  I argued that nutrient limitation drives most of the community
+%  interactions in the deep-sea. What is the basis of my argument? How do
+%  space and light fit into this argument?
+
+\item
+  About how much NPP is exported from hydrothermal vents and cold seeps?
+  What are other sources of NPP to the deep-sea communities?
+
+\item
+  Although the amount of NPP leaving hydrothermal vent communities is
+  minimal, some is exported to the larger deep sea habitat. Briefly
+  describe the ways in which NPP can leave the vent communities.
+  
+\item
+  Most chemosynthetic bacteria live in a fairly narrow area around the
+  hydrothermal vents. Why is this area restricted in size?
+
+\item
+  Chemosynthetic bacteria can actually be found well away from the
+  actual hot vents. Where would you find these bacteria? (I don't know
+  if this answer is blindingly obvious or not.)
+
+\item
+  Diagram the distribution of biomass, density, and diversity from the 
+  shelf break down to about 6000 m.
+ 
+\item
+  Explain how deep-sea benthic diversity can be high if both biomass and 
+  density are low.
+
+\item
+  Describe the environment of a typical deep-sea benthic community 
+  found on the abyssal plain well away from hydrothermal vents. Then,
+  describe how the environment and nutrient availability determines the types
+  of organisms that will be found int that community (where they live, how they feed, etc.).
+
+\end{enumerate}
+
+
+
+\end{document}

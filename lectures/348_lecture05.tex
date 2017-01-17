@@ -1,0 +1,318 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{calc} % Needed for \widthof
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+\begin{frame}[t]{Two major classes of phytoplankton are }
+	\vspace*{-\baselineskip}
+	
+	\begin{multicols}{2}
+		{\centering
+		\includegraphics[width=0.36\textwidth]{diatoms}
+		
+		\vspace*{0.5\baselineskip}
+		
+		\includegraphics[width=0.46\textwidth]{dinoflagellates}}
+		
+	\columnbreak
+	
+		\hangpara\highlight{Diatoms:} Bacillariophyceae
+
+		\vspace*{\baselineskip}
+
+		\hangpara\highlight{Dinoflagellates:} Dinophyceae
+		
+	\end{multicols}
+
+\vskip0pt plus 1filll
+
+\tiny top: USGS Photos from Life; bottom: \textcopyright\,McGraw-Hill.
+\end{frame}
+
+
+\begin{frame}[t]{Define primary productivity.}
+
+\begin{center}
+	\ce{CO2 + 6H2O ->[energy] C6H12O6 + 6O2}
+	
+	\vspace*{0.5\baselineskip}
+	
+	\includegraphics[width=\textwidth]{global_primary_productivity}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[t]{Terrestrial and oceanic ecosystems have similar NPP. Why?}
+
+	\vspace*{0.5\baselineskip}
+
+	\includegraphics[width=\textwidth]{global_primary_productivity}
+
+\end{frame}
+
+\begin{frame}[t]{What limits primary productivity in the ocean?}
+
+\begin{center}
+%	\ce{CO2 + 6H2O ->[energy] C6H12O6 + 6O2}
+	
+	\vspace*{0.5\baselineskip}
+	
+	\includegraphics[width=\textwidth]{global_primary_productivity}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[t]{\highlight{Photosynthetically active radiation} affects GPP.}
+\vspace*{-\baselineskip}
+\begin{center}
+	\includegraphics[height=0.85\textheight]{light_penetration}
+\end{center}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+
+
+\begin{frame}[t]{In pairs, plot GPP vs depth.}
+\end{frame}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{Why is GPP maximum around 20m depth?}
+	\vspace*{-\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.85\textheight]{gpp_vs_depth}
+	\end{center}
+
+	\vskip0pt plus 1filll
+
+	\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+\lecture{student}{student}
+
+\begin{frame}[t]{Marine organisms require three major nutrients.}
+
+	\begin{multicols}{2}
+
+		\begin{center}
+			\chemfig{C(=[:180]O)(=[:0]O)}
+			
+			\vspace*{4\baselineskip}
+			
+			\chemfig{C(=[:90]O)(-[:210]OH)(-[:330]OH)}
+		\end{center}
+				
+	\columnbreak
+	
+		\hangpara Carbon (C)\\ Nitrogen (N)\\ Phosphorus (P)
+		
+		\hangpara Dissolved or Particulate
+		
+		\hangpara Organic or Inorganic
+		
+	\end{multicols}
+\end{frame}
+
+\begin{frame}[t]{The \highlight{Redfield ratio} shows the ratio of C:N:P atoms in phytoplankton.}
+
+\begin{center}
+	\begin{tabular}{@{}lrr@{}}
+	\toprule
+	Atom & Phytoplankton & Water \\
+	\midrule
+	Carbon & 106 & 106 \\
+	Nitrogen & 16 & 14.7 \\
+	Phosphorus & 1 & 1 \\
+	\bottomrule
+	\end{tabular}
+\end{center}
+
+\hangpara Which nutrient is limiting?
+
+\end{frame}
+
+
+\begin{frame}[t]{Nutrients are not uniformly distributed with depth.}
+
+	\includegraphics[width=\textwidth]{nutrient_depth_distribution}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Marine Ecological Processes, Springer.
+\end{frame}
+
+\begin{frame}[t]{Vertical mixing returns nutrients to surface.}
+
+	\includegraphics[width=\textwidth]{vertical_nutrient_mixing}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings.
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{spring_algal_blooms}}
+\begin{frame}[b]{Mixing increases primary productivity in the spring.}
+\tiny\hfill\textcopyright\,Oxford Univ. Press.
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{copepod_calanus}}
+\begin{frame}[b]{\textcolor{white}{Copepods are 70–90\% of total ocean biomass.}}
+\tiny\textcolor{white}{Uwe Kils, Wikimedia Commons}
+\end{frame}
+}
+
+\begin{frame}[t]{One copepod can consume \textasciitilde12,000 diatom cells per hour.}
+	\vspace*{\baselineskip}
+	\includegraphics[width=\textwidth]{copepod_consumption_rate}
+	
+	\vskip0pt plus 1filll
+	
+	\tiny\textcopyright\,Levinton, Oxford University Press.
+\end{frame}
+
+\begin{frame}[t]{The \highlight{``classic model''} explains GPP at high latitudes.}
+
+	\vspace*{-\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.82\textheight]{classic_model_gpp}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Levinton, Oxford Univ. Press.
+\end{frame}
+
+\begin{frame}[t]{The classic model does not work at tropical latitudes.}
+
+	\vspace*{-0.5\baselineskip}
+	\begin{center}
+		\includegraphics[width=\textwidth]{global_primary_productivity}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Levinton, Oxford Univ. Press.
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{nanoplankton_fossils}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{Hannes Grobe, Wikimedia Commons}\qquad
+\end{frame}
+}
+
+\begin{frame}[t]{Bacteria and viruses create a \highlight{microbial loop.}}
+
+	\vspace*{-0.5\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.82\textheight]{microbial_loop}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Levinton, Oxford Univ. Press.
+\end{frame}
+
+\begin{frame}[t]{Polar food webs are relatively simple.}
+
+	\vspace*{-1\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.82\textheight]{food_web_polar}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Benjamin-Cummings.
+\end{frame}
+
+\begin{frame}[t]{Cool temperate food webs are more complex.}
+
+	\vspace*{-1\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.82\textheight]{food_web_temperate}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Benjamin-Cummings.
+\end{frame}
+
+\begin{frame}[t]{Tropical food webs are the most complex.}
+
+	\vspace*{-1\baselineskip}
+	\begin{center}
+		\includegraphics[height=0.82\textheight]{food_web_tropical}
+	\end{center}
+	\vskip0pt plus 1filll
+	
+\tiny\textcopyright\,Benjamin-Cummings.
+\end{frame}
+
+
+\end{document}

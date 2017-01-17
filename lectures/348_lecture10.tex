@@ -1,0 +1,624 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+%\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{animate}
+
+\usepackage{calc} % Needed for \widthof
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+\lecture{student}{student}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{coral_reef_intro}}
+\begin{frame}[b]{\hfill\textcolor{white}{Coral Reefs}}
+
+\tiny\hfill\textcolor{white}{James Watt, NOAA}
+\end{frame}
+}
+
+\begin{frame}[t]{Do all \highlight{scleractinian} corals build reefs?}
+\begin{multicols}{2}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{coral_reef_hermatypic1} \\[1ex]
+
+\includegraphics[width=0.4\textwidth]{coral_reef_hermatypic2} 
+\end{center}
+
+\columnbreak
+
+	\hangpara What are the \highlight{endosymbionts?}
+	
+	\hangpara What other organisms contribute to reef-building?
+
+
+\end{multicols}
+
+\end{frame}
+
+
+\begin{frame}[t]{Most \ce{CaCO3} in reefs is \highlight{biogenic.}}
+\begin{multicols}{2}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{calcareous_green_algae_live} \\[1ex]
+
+\includegraphics[width=0.4\textwidth]{calcareous_green_algae_dead} 
+\end{center}
+
+\columnbreak
+
+	\hangpara algal contributions
+	
+	\hangpara sediments.
+	
+	\vspace*{5\baselineskip}
+
+	\includegraphics[width=0.4\textwidth]{coralline_red_algae} 
+
+\end{multicols}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{coral_reef_distribution}}
+\begin{frame}[b]{What abiotic factors determine coral reef distribution and growth?}
+\tiny\textcopyright\,McGraw-Hill.
+\end{frame}
+}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{What abiotic factors determine coral reef distribution and development?}
+	\begin{multicols}{2}
+		\includegraphics[width=0.49\textwidth]{coral_reef_distribution}
+	\columnbreak
+		\hangpara Temperature \pause
+		
+		\hangpara Light \pause
+		
+		\hangpara Turbidity / sedimentation \pause
+		
+		\hangpara Salinity \pause
+		
+		\hangpara Water flow
+	\end{multicols}
+\end{frame}
+
+
+\lecture{student}{student}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{florida_bay}}
+\begin{frame}[b]
+
+\tiny\textcolor{white}{Florida Bay by Jeff Schmaltz, NASA.}
+\end{frame}
+}
+
+
+\begin{frame}[t]{What are the nutrient sources of reef GPP?}
+	\begin{multicols}{2}
+		\begin{center}
+		\includegraphics[width=0.45\textwidth]{reef_clear_water}
+		
+		\vspace*{1ex}
+		
+		\includegraphics[width=0.45\textwidth]{coral_reef_hermatypic2}
+		\end{center}
+		
+	\columnbreak
+	
+		\hangpara\parbox[t]{1.5in}{\raggedright Why does water around the reef have low NPP from reef?}
+		
+		\hangpara Reef: 1500–5000 \si{\gram~C.m^{-2}.yr^{-1}}
+		
+		\hangpara Water: 18–50 \si{\gram~C.m^{-2}.yr^{-1}}
+
+	\end{multicols}
+\end{frame}
+
+
+\lecture{instructor}{instructor}
+
+\begin{frame}[t]{What are the nutrient sources of reef GPP?}
+	\begin{multicols}{2}
+		\begin{center}
+		\includegraphics[width=0.45\textwidth]{reef_clear_water}
+		
+		\vspace*{1ex}
+		
+		\includegraphics[width=0.45\textwidth]{coral_reef_hermatypic2}
+		\end{center}
+		
+	\columnbreak
+	
+		\hangpara Zooxanthellae \pause
+		
+		\hangpara Algae
+		
+		\hangpara Turf algae \pause
+		
+		\hangpara Bacteria
+		
+	\end{multicols}
+\end{frame}
+
+
+
+\lecture{student}{student}
+
+\begin{frame}[t]{Insular coral reef formation has three stages, based on \highlight{subsidence.}}
+
+\includegraphics[width=\textwidth]{insular_reef_formation}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_reef}}
+\begin{frame}[t]
+
+
+\vspace*{2\baselineskip}
+
+\hangpara\hspace*{60mm}\parbox[t]{1.5in}{Continental reefs do not have an atoll stage.}
+
+\vspace*{\baselineskip}
+
+\hangpara\hspace*{60mm}\parbox[t]{1.5in}{Why not?}
+
+\vskip0pt plus 1filll
+
+\hfill\tiny Great Barrier Reef, NASA.
+\end{frame}
+}
+
+
+\begin{frame}[t]{Fringing reef.}
+
+\includegraphics[width=\textwidth]{reef_fringing}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_fringing_example}}
+\begin{frame}[b]{\hfill\textcolor{white}{Fringing reef, Yap}}
+
+\hfill\tiny\textcolor{white}{NOAA, public domain.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_barrier}}
+\begin{frame}[b]{Barrier reef.}
+
+\tiny\hfill\textcopyright\,McGraw-Hill
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_barrier_example}}
+\begin{frame}[b]{\hfill\textcolor{white}{Barrier reef, \\\hfill New Caledonia.}}
+
+\tiny\textcolor{white}{NASA Earth Observatory, public domain.}
+\end{frame}
+}
+
+\begin{frame}[t]{Atoll.}
+
+\includegraphics[width=\textwidth]{reef_atoll}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,McGraw-Hill
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_atoll_example}}
+\begin{frame}[b]{\hfill\textcolor{white}{Atafu Atoll, \\\hfill Tokelau.}}
+
+\tiny\textcolor{white}{NASA Johnson Space Center, public domain.}
+\end{frame}
+}
+
+\begin{frame}[t]{Coral reefs show distinct zonation.}
+
+\includegraphics[width=\textwidth]{reef_zonation}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+\begin{frame}[t]{What abiotic and biotic factors determine reef zonation?}
+
+\includegraphics[width=\textwidth]{reef_zonation_crest}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+\begin{frame}[t]{What factors are present in the reef crest?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_crest1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_crest2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\vspace*{4\baselineskip}
+	
+	\hangpara\textbf{Biotic}
+	
+	
+\end{multicols}
+\end{frame}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{What factors are present in the reef crest?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_crest1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_crest2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\hangpara wave action\\\pause intense light\\\pause aerial exposure
+	
+	\hangpara\textbf{Biotic}
+	
+	\hangpara competition is high\\\pause predation is low\\\pause mutualism is low
+	
+\end{multicols}
+\end{frame}
+
+
+
+\lecture{student}{student}
+
+\begin{frame}[t]{What abiotic and biotic factors determine reef zonation?}
+
+\includegraphics[width=\textwidth]{reef_zonation_flat}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+\begin{frame}[t]{What factors are present in the reef flat?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_flat1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_flat2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\vspace*{4\baselineskip}
+	
+	\hangpara\textbf{Biotic}
+	
+	
+\end{multicols}
+\end{frame}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{What factors are present in the reef flat?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_flat1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_flat2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\hangpara intense light\\\pause salinity\\\pause aerial exposure\\\pause turbidity
+
+	\hangpara\textbf{Biotic}
+	
+	\hangpara competition is high\\\pause predation is moderate\\\pause mutualism is moderate.
+
+	
+\end{multicols}
+\end{frame}
+
+
+\lecture{student}{student}
+
+\begin{frame}[t]{What abiotic and biotic factors determine reef zonation?}
+
+\includegraphics[width=\textwidth]{reef_zonation_slope}
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+\begin{frame}[t]{What factors are present in the fore-reef slope?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_slope1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_slope2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\vspace*{4\baselineskip}
+	
+	\hangpara\textbf{Biotic}
+	
+	
+\end{multicols}
+\end{frame}
+
+\lecture{instructor}{instructor}
+\begin{frame}[t]{What factors are present in the fore-reef slope?}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_slope1}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{reef_slope2}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Abiotic}
+	
+	\hangpara intense light\pause 
+
+	\hangpara\textbf{Biotic}
+	
+	\hangpara competition is high\\\pause predation is high\\\pause mutualism is high.
+
+	
+\end{multicols}
+\end{frame}
+
+
+\begin{frame}[t]{Species have competitive adaptations.}
+
+\begin{multicols}{2}
+	\begin{center}
+	
+	\includegraphics[width=0.4\textwidth]{reef_slope2}\\[1ex]
+	
+	\includegraphics[width=0.4\textwidth]{coral_overgrowth}
+	\end{center}
+\columnbreak
+
+	\hangpara\textbf{Sessile organisms}
+	
+	\hangpara interference (\href{https://www.youtube.com/watch?v=XsNsWTlFcCE}{video})\\\pause exploitative\\\pause chemical compounds\\\pause overgrowth
+
+	\hangpara\textbf{Mobile organisms}
+	
+	\hangpara poorly understood\\\pause probably complex.
+
+	
+\end{multicols}
+\end{frame}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{competition_stegastes}}
+\begin{frame}[b]
+
+\tiny\hfill Robertson 1996. Ecology 77: 885.
+\end{frame}
+}
+
+
+\begin{frame}
+
+\begin{multicols}{2}
+
+	\includegraphics[width=0.49\textwidth]{seafan_predation}
+
+\columnbreak
+
+	\hangpara Micropredation
+	
+	\hangpara Herbivory
+	
+	\hangpara Defense mechanisms
+	
+	\vspace*{\baselineskip}
+	
+	\includegraphics[width=0.45\textwidth]{crown_thorns}
+	
+\end{multicols}
+
+\end{frame}
+
+
+
+\begin{frame}[t]{Three types of \highlight{positive interactions} are common on reefs.}
+
+\begin{multicols}{2}
+
+	\begin{center}
+	
+	\includegraphics[width=0.45\textwidth]{sponge_goby}\\[1ex]
+	
+	\includegraphics[width=0.45\textwidth]{cleaner_shrimp}
+	
+	\end{center}
+	
+\columnbreak
+
+	\hangpara Indirect
+	
+	\hangpara Commensalism
+	
+	\hangpara Mutualism
+		
+\end{multicols}
+
+\end{frame}
+
+\lecture{instructor}{instructor}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mutualism_cleaner_wrasse}}
+\begin{frame}[b]
+
+\tiny\textcolor{white}{Klaus Stiefel, Flickr, Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mutualism_cleaner_shrimp}}
+\begin{frame}[b]
+
+\tiny\hfill\textcolor{white}{Scanned from a dive magazine back in the day.}
+\end{frame}
+}
+
+\lecture{student}{student}
+\begin{frame}[t]{Why is reef diversity highest in the Indo-West Pacific?}
+
+\vspace*{-\baselineskip}
+
+\begin{multicols}{2}
+	\qquad\qquad\textbf{Pacific}\\
+	\qquad\qquad 500 coral spp.\\
+	\qquad\qquad 5000 mollusk spp.\\
+	\qquad\qquad 2000 fish spp.
+	
+\columnbreak
+	
+	\qquad\textbf{Atlantic}\\
+	\qquad62 coral spp.\\
+	\qquad 1200 mollusk spp.\\
+	\qquad 600 fish spp.
+\end{multicols}
+
+\includegraphics[width=\textwidth]{reef_diversity_distribution}
+
+\hangpara What are the \highlight{biological} implications of high diversity?
+
+\vskip0pt plus 1filll
+
+\tiny\textcopyright\,Benjamin-Cummings
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_community_structure}}
+\begin{frame}[b]{\textcolor{white}{Community structure.}}
+\tiny\textcolor{white}{Elphine Stone Reef, Red Sea, Egypt. Derek Keats, Flickr, Creative Commons.}
+\end{frame}
+}
+
+
+\begin{frame}[t]{Community structure is complex on coral reefs.}
+
+\begin{multicols}{2}
+	{\centering
+	\includegraphics[width=0.43\textwidth]{reef_fish_community}\par}
+\columnbreak
+	
+	\hangpara\highlight{Large numbers} of species.
+	
+	\hangpara\highlight{High abundance} of most species.
+	
+	\hangpara\highlight{High specialization} of species.
+	
+	\hangpara\highlight{High reproductive output}
+	
+	\hangpara\highlight{High variation} of community across space and time.
+	
+	\hangpara What is your hypothesis to explain structure?
+\end{multicols}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_community_structure_hypotheses}}
+\begin{frame}[b]{}
+\end{frame}
+}
+
+
+\end{document}
