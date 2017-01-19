@@ -7,7 +7,6 @@
 %\documentclass[t,handout]{beamer}  %Use this for handouts.
 %\usepackage{handoutWithNotes}
 %\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
-%	\setbeamercolor{background canvas}{bg=black!5}
 
 
 %%% Including only some slides for students.
@@ -25,8 +24,8 @@
 % FONTS
 \usepackage{fontspec}
 \def\mainfont{Linux Biolinum O}
-\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
-\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={OldStyle, Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase, Numbers=OldStyle]{Linux Biolinum O} 
 \usepackage{microtype}
 %
 \usepackage{graphicx}
@@ -39,7 +38,7 @@
 
 %\usepackage{units}
 
-\usepackage{booktabs}
+%\usepackage{booktabs}
 \usepackage{multicol}
 %	\setlength{\columnsep=1em}
 
@@ -52,7 +51,7 @@
 {
   \usetheme{Lecture}
   \setbeamercovered{invisible}
-  \setbeamertemplate{items}[square]
+%  \setbeamertemplate{items}[square]
 }
 
 %\usepackage{calc}
@@ -63,21 +62,19 @@
 }
 
 
-
 \begin{document}
 
-%\lecture{instructor}{instructor}
 \lecture{student}{student}
 
 {
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
 \begin{frame}[b]{How many oceans are on Earth?}
-\tiny Image: Wikimedia Commons.
+	\hfill \tiny Wikimedia, public domain
 \end{frame}
 }
-
-
+%
 \lecture{instructor}{instructor}
+
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
 \begin{frame}[t]{How many oceans are on Earth?}
 	\begin{tikzpicture}
@@ -89,34 +86,34 @@
 		\node [black, right] at (8.5,-0.1) {Arctic};
 	\end{tikzpicture}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny Image: Wikimedia Commons.
+	\hfill \tiny Wikimedia, public domain
 
 \end{frame}
 }
-
+%
 \lecture{student}{student}
+
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{southern_ocean}}
 \begin{frame}[t]{\null}
 	\begin{tikzpicture}
 		\node [white, right] at (6,1.1) {Africa};
 		\node [white, left] at (2,-3) {S. America};
 		\node [white, right] at (10.1,-4) {Australia};
-		\node [white, right] at (8.1,-7) {New Zealand};
+		\node [white, right] at (8,-6.5) {New Zealand};
 		\node [black, right] at (5.4,-2.25) {Antarctica};
 		\node [white, right] at (5,-0.9) {Southern Ocean};
 		\node [white, right] at (5,-5.5) {Southern Ocean};
 	\end{tikzpicture}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+	\tiny\textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
 
 \end{frame}
 }
-
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepest_points}}
 \begin{frame}[b]{\textcolor{white}{What are the deepest points in the oceans?}}
 
@@ -150,24 +147,26 @@
 
 	\end{tikzpicture}
 
-\tiny\textcolor{white}{Seafloor Topography V4.0, \textcopyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
+	\hfill \tiny \textcolor{white}{Seafloor Topography V4.0, \copyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_tectonics}}
 \begin{frame}[b]{Ocean basins are formed by plate tectonics.}
-\tiny Image: \textcopyright\,McGraw-Hill
+	\hfill \tiny \copyright\,McGraw-Hill
 \end{frame}
 }
-
+%
 \begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+
 \begin{multicols}{2}
-\includegraphics[width=0.5\textwidth]{two_crust_types}
+
+	\includegraphics[width=0.5\textwidth]{two_crust_types}
+
 \columnbreak
-%	\hangpara Continental Crust
-	
-%	\hangpara Oceanic Crust
-	
+
 	\hangpara Which type is thicker?
 	
 	\hangpara Which type is older?
@@ -175,17 +174,22 @@
 	\hangpara Which type is denser?
 \end{multicols}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny Image: \textcopyright\,McGraw-Hill
+	\hfill \tiny \copyright\,McGraw-Hill
 
 \end{frame}
-
+%
 \lecture{instructor}{instructor}
+
 \begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+
 \begin{multicols}{2}
-\includegraphics[width=0.5\textwidth]{two_crust_types}
+
+	\includegraphics[width=0.5\textwidth]{two_crust_types}
+
 \columnbreak
+
 	\hangpara \highlight{Continental} crust
 
 	\hangpara\quad up to 50 km thick\\
@@ -200,22 +204,26 @@
 	
 \end{multicols}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny Image: \textcopyright\,McGraw-Hill
+	\hfill \tiny \copyright\,McGraw-Hill
 
 \end{frame}
-
+%
 \lecture{student}{student}
+
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_ridges_trenches}}
 \begin{frame}[b]{Plate movement creates ridges and trenches.}
-\tiny Tharp map of sea floor: \textcopyright\,Marie Tharp and Bruce Heezen, 1977.
+	\hfill \tiny \copyright\,Marie Tharp and Bruce Heezen, 1977.
 \end{frame}
 }
+%
+\begin{frame}[t]{\highlight{Ridge push:} The weight of the ridge pushes apart the plates.}
 
-\begin{frame}[t]{\highlight{Ridge push:} plates move apart at the ridges.}
 \begin{multicols}{2}
-\includegraphics[width=0.5\textwidth]{ridge_push}
+
+	\includegraphics[width=0.5\textwidth]{ridge_push}
+
 \columnbreak
 
 	\hangpara Magma rises, cools, and solidifies.
@@ -224,119 +232,139 @@
 		
 \end{multicols}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny Image: \textcopyright\,McGraw-Hill
+	\hfill \tiny \copyright\,McGraw-Hill
 
 \end{frame}
+%
+\begin{frame}[t]{\highlight{Slab pull:} oceanic crust sinks at \highlight{subduction zones}, pulling apart the plates.}
 
-\begin{frame}[t]{\highlight{Slab pull:} oceanic crust sinks at \highlight{subduction zones.}}
-\begin{multicols}{2}
-\includegraphics[width=0.5\textwidth]{slab_pull}
-\columnbreak
+	\vspace*{-0.5\baselineskip}
 
-	\vspace*{4\baselineskip}
+	\begin{multicols}{2}
+
+		\includegraphics[height=0.72\textheight]{slab_pull}
+
+	\columnbreak
+
+		\vspace*{4\baselineskip}
 	
-	\hangpara Subduction zones create trenches.
-\end{multicols}
+		\hangpara Subduction zones create trenches.
+	\end{multicols}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny Image: \textcopyright\,McGraw-Hill
+	\hfill \tiny \copyright\,McGraw-Hill
 
 \end{frame}
-
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seismic_events}}
 \begin{frame}[b]{Seismic events occur at ridges and trenches.}
-\tiny Image: NASA (\url{http://denali.gsfc.nasa.gov/dtam/seismic/})
+
+	\hfill \tiny \textsc{nasa} (\url{http://denali.gsfc.nasa.gov/dtam/seismic/})
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{changing_basins}}
 \begin{frame}[b]{Tectonics has rearranged the ocean basins over time.}
-\hfill\tiny Image: \textcopyright\,Oxford University Press
+
+	\hfill	\tiny \copyright\,Oxford University Press
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_sea}}
 \begin{frame}[b]{The \highlight{Tethys Sea} was formed about 300 MYA.}
-\tiny Image: Wikimedia Commons.
+
+	\hfill \tiny Adrignola, Wikimedia \ccbysa{3}
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_seaway}}
 \begin{frame}[b]{The \highlight{Tethys Seaway} allowed dispersal of tropical organisms among oceans.}
 
-\hangpara Oceans were connected until 10–15 MYA when Africa hit Eurasia, followed by Isthmus of Panama ca. 3 MYA.
+	\hangpara Oceans were connected until 10–15 \textsc{mya} when Africa hit Eurasia, followed by Isthmus of Panama ca. 3 \textsc{mya}.
 
-\tiny\hfill Image: Eocene reconstruction modified from \url{scotese.com})
+	\tiny \hfill Modified from \url{scotese.com})
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{oceans_current_configuration}}
 \begin{frame}[b]{Tropical organisms in different oceans are isolated by land and temperature.}
-\tiny Image: \textcopyright\,McGraw-Hill)
+\tiny \copyright\,McGraw-Hill)
 \end{frame}
 }
-
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
 \begin{frame}[b]{The \highlight{continental margin} consists of the continental shelf, slope and rise.}
-\tiny Image: \textcopyright\,McGraw-Hill)
+
+	\hfill \tiny \copyright\,McGraw-Hill)
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
 \begin{frame}[b]{The abyssal plain is between 3,000–6,000 m deep.}
-\tiny Image: \textcopyright\,McGraw-Hill)
+
+	\hfill \tiny \copyright\,McGraw-Hill)
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{global_continental_shelf}}
 \begin{frame}[b]{\textcolor{white}{The continental shelf represents about 7–8\% of the ocean surface area.}}
-\tiny\textcolor{white}{Seafloor Topography V4.0, \textcopyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
+	\hfill \tiny \textcolor{white}{Seafloor Topography \textsc{v}4.0, \copyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
 \end{frame}
 }
-
+%
 \lecture{instructor}{instructor}
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{los_angeles_seafloor}}
 \begin{frame}[b]{}
-\tiny\textcolor{white}{U.S. Geological Survey Pacific Sea-Floor Mapping Project.}
+	\tiny	\textcolor{white}{\textsc{usgs} Pacific Sea-Floor Mapping Project.}
 \end{frame}
 }
-
+%
 \lecture{instructor}{instructor}
+
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{puerto_rico_trench}}
 \begin{frame}[b]{}
-\tiny\hfill\textcolor{white}{Puerto Rico Trench, U.S. Geological Survey Project PROBE Leg II.}
+
+	\hfill \tiny \textcolor{white}{\textsc{usgs} Project \textsc{probe} Leg II.}
+
 \end{frame}
 }
-
+%
 \lecture{student}{student}
+
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_na}}
 \begin{frame}[b]{}
 
-\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+	\hfill \tiny \textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
+
 \end{frame}
 }
-
+%
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_sa}}
 \begin{frame}[t]{}
 
-\vspace*{4\baselineskip}
+	\vspace*{4\baselineskip}
 
-\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Why is the shelf broad on the east coast and narrow on the west coast?}}
+	\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Why is the shelf broad on the east coast and narrow on the west coast?}}
 
-\vspace*{1\baselineskip}
+	\vspace*{1\baselineskip}
 
-\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Will this difference affect marine life? If so, how? If not, why not?}}
+	\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Will this difference affect marine life? If so, how? If not, why not?}}
 
-\vskip0pt plus 1filll
+	\vfilll
 
-\tiny\textcolor{white}{Made with Google Earth, \textcopyright\,2015 Google Inc.}
+	\tiny \textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
 \end{frame}
 }
-
-
+%
 \end{document}
