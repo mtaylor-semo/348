@@ -1,0 +1,174 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/5_in_5/}
+	{/Users/goby/Pictures/teach/348/lectures/}}%
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\definecolor{eveblue}{RGB}{80,152,242}
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{calc}
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{5in5_overview}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{specific_topic}}
+\begin{frame}[b]
+\tiny\textcolor{white}{Mohamed Al Momany, NOAA Photo Library.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{five_minutes}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{first_slide}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{five_slides}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{one_sentence}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{title_slide}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{practice}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{consistent_theme}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{support_talk}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{big_images}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{Ken Sulak, NOAA Photo Library.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{full_bleed}}
+\begin{frame}[b]
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{dont_stretch}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{no_watermarks}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{Preview photo \textcopyright Shutterstock. All rights reserved.}
+\end{frame}
+}
+
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{non_commercial}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.\hfill\href{http://search.creativecommons.org}{Creative Commons Search Engine}}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{give_credit}}
+\begin{frame}[b]
+\tiny\hfill\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{due_date}}
+\begin{frame}[b]
+\tiny\textcolor{white}{NOAA Ocean Explorer, Flickr Creative Commons.}
+\end{frame}
+}
+
+
+\end{document}

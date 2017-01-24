@@ -1,0 +1,134 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+%\includeonlylecture{student}
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/5_in_5/}}%
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\definecolor{eveblue}{RGB}{80,152,242}
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{calc}
+%\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{reef_fish_james_watt_noaa}
+}
+\begin{frame}[b,plain]{\textcolor{orange5}{Larval dispersal and marine diversity.}}
+\small{\textcolor{gray}{5-in-5 demo.}}\hfill \textcolor{white}{\tiny Photo by James Watt, NOAA, Creative Commons.}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{roberts}
+}
+\begin{frame}[b,plain]
+\tiny\textcolor{white}{Modified from Roberts 1997. Science 278: 1454}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cowen}
+}
+\begin{frame}[b,plain]
+\tiny\textcolor{white}{Modified from Cowen et al. 2000. Science 287: 857}
+\end{frame}
+}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{evelynae.jpg}
+}
+\begin{frame}[b,plain]
+\hfill \textcolor{white}{\tiny \textit{Elacatinus evelynae} \textcopyright\,Paul Humann, All Rights Reserved.}
+\end{frame}
+}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{eve_sample}
+}
+\begin{frame}[t,plain]
+	\begin{tikzpicture}[form/.style={circle, inner sep=0pt, minimum size=2.5mm}]
+		\node [white, right] at (8.75,-0.5) {Sharknose Goby};
+		\node[form] (blueform) at (9,-1) [fill=eveblue] {};
+		\node [eveblue,right] at (blueform.east) {blue form}; 
+		\node[form] (yellowform) at (9,-1.5) [fill=yellow] {};
+		\node [yellow,right] at (yellowform.east) {yellow form}; 
+		\node[form] (whiteform) at (9,-2) [circle, fill=white] {};
+		\node [white,right] at (whiteform.east) {white form}; 
+		\node [white, right] at (-0.4, -9.3) {\tiny Distributions courtesy Pat Colin, unpublished data};
+	\end{tikzpicture}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{eve_cytb_network}
+}
+\begin{frame}[t,plain]
+	\begin{tikzpicture}
+		\node [white, right] at (8.5,-0.5) {Sharknose Goby};
+		\node [orange5, right] at (8.5,-1) {\small $\Phi_{\rm{ST}} = 79\%$};
+		\node [white, right] at (8.5,-1.5) {\scriptsize cytochrome \textit{b} (400 bp)};
+		\node [white,right] at (-0.4,-9.3) {\tiny Taylor and Hellberg 2003. Science 299: 107};
+	\end{tikzpicture}
+
+\end{frame}
+}
+
+\end{document}
