@@ -26,6 +26,18 @@
 *.pptx
 *.jpg
 *.png
+.DS_Store
+
+## Folders
+exams/
+_current_semester/
+5in5/
+handouts/
+past_semesters/
+lectures_old/
+test_bank/
+support/
+study_guides/**/
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
