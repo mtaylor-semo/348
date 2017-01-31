@@ -39,7 +39,10 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
-%\usepackage{enumitem}
+\usepackage{enumitem}
+\setlist{leftmargin=*}
+\setlist[1]{labelindent=\parindent}
+\setlist[enumerate]{label=\textsc{\alph*}., ref=\textsc{\alph*}}
 
 %\usepackage{titling}
 %\setlength{\droptitle}{-60pt}
@@ -49,6 +52,10 @@
 \renewcommand{\solutiontitle}{\noindent}
 \unframedsolutions
 \SolutionEmphasis{\bfseries}
+
+\renewcommand{\questionshook}{%
+	\setlength{\leftmargin}{-\leftskip}%
+}
 
 \pagestyle{headandfoot}
 \firstpageheader{BI 348: Marine Biology}{}{\ifprintanswers\textbf{KEY} \else Name \rule{2.5in}{0.4pt}\fi}
@@ -64,7 +71,7 @@
 
 \begin{multicols}{2}
 
-\noindent\includegraphics[width=0.49\textwidth]{larval_transport}\\
+\noindent\includegraphics[width=0.45\textwidth]{larval_transport}\\
 {\footnotesize Modified from Epifano and Garvine 2001.}
 
 \columnbreak
@@ -80,15 +87,15 @@ Consider this diagram of the northeastern coast of the U.S.  All along the coast
 
 \begin{questions}
 
-\question[5]
-\label{ques:spring_currents}Based on what you know of the physical forces at play here, describe in detail how you believe surface currents will be moving at this location during the spring. Include the name of the forces and how each contributes to the direction of current movement. (Drawing arrows may help but please say why you think so with words.)
+\question[4]
+\label{ques:spring_currents}Based on what you know of the physical forces at play here, describe in detail the direction you believe surface currents will move at this location during the spring. Include the name of the forces and how each contributes to the direction of current movement. (Drawing arrows may help but please say why you think so with words.)
 
 %\vspace*{\stretch{1}}
 
 \newpage
 
-\question[5]
-In the fall, the wind shifts and blows along this coast from the north.  How do you think the ocean currents will be moving then? Why?
+\question[4]
+In the fall, the wind shifts and blows along this coast from the north.  What direction do you think the ocean currents will be moving then? Why?
 
 \vspace*{\stretch{0.75}}
 
@@ -97,13 +104,13 @@ In the fall, the wind shifts and blows along this coast from the north.  How do 
 
 \begin{multicols}{2}
 
-\uplevel{\noindent\includegraphics[width=0.49\textwidth]{larval_transport}}
+\uplevel{\noindent\includegraphics[width=0.45\textwidth]{larval_transport}}
 
 \columnbreak
 
-Estuaries like Delaware Bay are breeding grounds for many species, including the Blue Crab, \textit{Callinectes sapidus.} This crab produces planktotrophic larvae that are released into the estuary. However, the larvae of this species develop in the ocean over the shelf.
+Estuaries like Delaware Bay are breeding grounds for many species, including the Blue Crab, \textit{Callinectes sapidus.} The Blue Crab produces planktotrophic larvae that are released into the estuary. The larvae, however, leave the estuary to develop over the continental shelf.
 
-\question[3]
+\question[2]
 Based on question~\ref{ques:spring_currents}, what time of year (season) must the crab release their larvae to ensure their transport outward over the continental shelf? Draw arrows on the diagram at left demonstrating what you believe would be the movement of the larvae.
 
 \end{multicols}
