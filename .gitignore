@@ -32,7 +32,7 @@
 exams/
 _current_semester/
 5in5/
-handouts/
+#handouts/
 past_semesters/
 lectures_old/
 test_bank/
