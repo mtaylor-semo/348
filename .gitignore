@@ -26,6 +26,8 @@
 *.pptx
 *.jpg
 *.png
+## Large print versions of the study guides.
+*_lp.tex
 .DS_Store
 
 ## Folders
