@@ -1,0 +1,479 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\includeonlylecture{student}
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, Contextuals={NoAlternate}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional, OldStyle}]{\mainfont}
+\setsansfont[Scale=MatchLowercase, Numbers={Proportional, OldStyle}]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\usepackage{tikz}
+	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+%\usepackage{calc}
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{\widthof{#1}}{\fboxrule}}{#1}%
+}
+
+
+
+\begin{document}
+
+%\lecture{instructor}{instructor}
+\lecture{student}{student}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{marine_biology_intro}}
+\begin{frame}[t]
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{mike_snake}}
+\begin{frame}[t,plain]
+\large
+\vspace{5ex}
+\hangpara\hspace{17em} Mike Taylor
+
+\hangpara\hspace{17em} \textsc{rh} 217
+
+\hangpara\hspace{17em} mtaylor@semo.edu
+
+	\hangpara \hspace{17em} \includegraphics[width=0.4cm]{twitter_icon} @MikeTaylor\textsc{semo}\\
+\hspace{17em} \#\textsc{bi}348\textsc{taylor}
+\end{frame}
+}
+
+\begin{frame}[t]{You \highlight{earn} your grade with}
+	\begin{center}\large\begin{tabular}{@{}ll@{}}
+	Four 75-point exams & 60\% \\
+	Home/in-class Assignments & 20\% \\
+	5-in-5 Presentation & 20\% \\
+	\end{tabular}
+	\end{center}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{5in5_overview}
+}
+\begin{frame}[t]
+\end{frame}
+}
+
+\begin{frame}[t]{Your \highlight{objectives} for this course are to}
+	\hangpara learn basic terms and concepts,
+
+	\hangpara learn basic oceanographic processes,
+	
+	\hangpara relate oceanographic processes to biological processes, and
+
+	\hangpara develop a biological context for marine conservation.
+	
+%	\pause
+	
+%	\hangpara \highlight{I hope!}
+
+\end{frame}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cocos_jacks}}
+\begin{frame}[t]{What is the \highlight{marine} environment?}
+\end{frame}
+}
+\begin{frame}[t]%{What are the salts in salt water?}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{salinity_breakdown}
+	\end{center}
+
+	\vfilll
+
+	\hfill \tiny \copyright\,McGraw-Hill
+\end{frame}
+%
+\begin{frame}[t]{Salts have terrestrial origins.}
+	\begin{center}
+		\includegraphics[height=0.8\textheight]{salinity_sources}
+	\end{center}
+
+	\vfilll
+
+	\hfill \tiny \copyright\,McGraw-Hill
+\end{frame}
+%
+\begin{frame}[t]{Great Salt Lake has a mean salinity of 27\% (270\text{\textperthousand}).}
+	\begin{center}
+		\includegraphics[height=0.8\textheight]{salinity_great_salt_lake}
+	\end{center}
+
+	\tiny Wikimedia Commons, public domain
+\end{frame}
+%
+\begin{frame}[t]{Oceans are divided into horizontal and vertical zones.}
+	\begin{center}
+		\includegraphics[height=0.8\textheight]{ocean_zones}
+	\end{center}
+
+	\vfilll
+
+	\hfill \tiny \copyright\,Benjamin-Cummins
+\end{frame}
+%
+
+\lecture{student}{student}
+
+{
+	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
+	\begin{frame}[b]{How many oceans are on Earth?}
+	\hfill \tiny Wikimedia, public domain
+\end{frame}
+}
+%
+\lecture{instructor}{instructor}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{how_many_oceans}}
+\begin{frame}[t]{How many oceans are on Earth?}
+\begin{tikzpicture}
+\node [black, right] at (0.5,-3) {Pacific};
+\node [black, right] at (10.5,-3) {Pacific};
+\node [black, right] at (3.5,-2) {Atlantic};
+\node [black, right] at (7.75,-4) {Indian};
+\node [black, right] at (2.25,-0.1) {Arctic};
+\node [black, right] at (8.5,-0.1) {Arctic};
+\end{tikzpicture}
+
+\vfilll
+
+\hfill \tiny Wikimedia, public domain
+
+\end{frame}
+}
+%
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{southern_ocean}}
+\begin{frame}[t]{\null}
+\begin{tikzpicture}
+\node [white, right] at (6,1.1) {Africa};
+\node [white, left] at (2,-3) {S. America};
+\node [white, right] at (10.1,-4) {Australia};
+\node [white, right] at (8,-6.5) {New Zealand};
+\node [black, right] at (5.4,-2.25) {Antarctica};
+\node [white, right] at (5,-0.9) {Southern Ocean};
+\node [white, right] at (5,-5.5) {Southern Ocean};
+\end{tikzpicture}
+
+\vfilll
+
+\tiny\textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
+
+\end{frame}
+}
+%
+\lecture{instructor}{instructor}
+
+\begin{frame}[t]{Your first \highlight{homework} assignment is to}
+%\hangpara Name all of the recognized oceans, and
+
+\hangpara identify the deepest spot in each ocean, with depth (in meters).
+
+\hangpara Due next lecture.
+\end{frame}
+
+\lecture{student}{student}
+%{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepest_points}}
+%\begin{frame}[b]{\textcolor{white}{What are the deepest points in the oceans?}}
+%
+%\pause
+%\begin{tikzpicture}[form/.style={circle, inner sep=0pt, minimum size=3mm},
+%info/.style={white, align=right}]
+%
+%\node[form] (marianas) at (4.7,4.4) [fill=white] {};
+%\node[info] [right, align=left] at (marianas.east) {Marianas Trench\\ 10,911m};
+%
+%\pause
+%\node[form] (puerto) at (10,4.6) [fill=white] {};
+%\node[info] [right, align=left] at (puerto.east) {Puerto Rico\\ Tr. 8648 m};
+%
+%\pause
+%\node[form] (sunda) at (3.3,3.6) [fill=white] {};
+%\node[info] [left] at (sunda.west) {Sunda Trench\\ 7725m};
+%
+%\node[form] (diamantina) at (3.3,2.5) [fill=white] {};
+%\node[info] [left, align=left] at (diamantina.south west) {Diamantina\\ Deep 8047 m};
+%
+%\pause
+%\node[form] (sandwich) at (11.5,1.3) [fill=white] {};
+%\node[info] [left] at (sandwich.west) {Sandwich Trench\\ 7235 m};
+%
+%\pause
+%\node[info] [left] at (12,6) {Litke Deep\\ 5449 m};
+%
+%\draw [->, white, ultra thick] (11.5,6.5) -- (12.4,7.5);
+%
+%
+%\end{tikzpicture}
+%
+%
+%\hfill \tiny \textcolor{white}{Seafloor Topography V4.0, \copyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+%
+%\end{frame}
+%}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_tectonics}}
+\begin{frame}[b]{Ocean basins are formed by plate tectonics.}
+\hfill \tiny \copyright\,McGraw-Hill
+\end{frame}
+}
+%
+\begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+
+\begin{multicols}{2}
+
+\includegraphics[width=0.5\textwidth]{two_crust_types}
+
+\columnbreak
+
+\hangpara Which type is thicker?
+
+\hangpara Which type is older?
+
+\hangpara Which type is denser?
+\end{multicols}
+
+\vfilll
+
+\hfill \tiny \copyright\,McGraw-Hill
+
+\end{frame}
+%
+\lecture{instructor}{instructor}
+
+\begin{frame}[t]{Earth has \highlight{continental} and \highlight{oceanic} crusts.}
+
+\begin{multicols}{2}
+
+\includegraphics[width=0.5\textwidth]{two_crust_types}
+
+\columnbreak
+
+\hangpara \highlight{Continental} crust
+
+\hangpara\quad up to 50 km thick\\
+\quad 3.8 billion years old\\
+\quad less dense.
+
+\hangpara \highlight{Oceanic} Crust
+
+\hangpara\quad up to 5 km thick\\
+\quad 200 million years old\\
+\quad more dense.
+
+\end{multicols}
+
+\vfilll
+
+\hfill \tiny \copyright\,McGraw-Hill
+
+\end{frame}
+%
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ocean_ridges_trenches}}
+\begin{frame}[b]{Plate movement creates ridges and trenches.}
+\hfill \tiny \copyright\,Marie Tharp and Bruce Heezen, 1977.
+\end{frame}
+}
+%
+\begin{frame}[t]{\highlight{Ridge push:} The weight of the ridge pushes apart the plates.}
+
+\begin{multicols}{2}
+
+\includegraphics[width=0.5\textwidth]{ridge_push}
+
+\columnbreak
+
+\hangpara Magma rises, cools, and solidifies.
+
+\hangpara Plates move 2–18 cm per year.
+
+\end{multicols}
+
+\vfilll
+
+\hfill \tiny \copyright\,McGraw-Hill
+
+\end{frame}
+%
+\begin{frame}[t]{\highlight{Slab pull:} oceanic crust sinks at \highlight{subduction zones}, pulling apart the plates.}
+
+\vspace*{-0.5\baselineskip}
+
+\begin{multicols}{2}
+
+\includegraphics[height=0.72\textheight]{slab_pull}
+
+\columnbreak
+
+\vspace*{4\baselineskip}
+
+\hangpara Subduction zones create trenches.
+\end{multicols}
+
+\vfilll
+
+\hfill \tiny \copyright\,McGraw-Hill
+
+\end{frame}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seismic_events}}
+\begin{frame}[b]{Seismic events occur at ridges and trenches.}
+
+\hfill \tiny \textsc{nasa} (\url{http://denali.gsfc.nasa.gov/dtam/seismic/})
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{changing_basins}}
+\begin{frame}[b]{Tectonics has rearranged the ocean basins over time.}
+
+\hfill	\tiny \copyright\,Oxford University Press
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_sea}}
+\begin{frame}[b]{The \highlight{Tethys Sea} was formed about 300 MYA.}
+
+\hfill \tiny Adrignola, Wikimedia \ccbysa{3}
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{tethys_seaway}}
+\begin{frame}[b]{The \highlight{Tethys Seaway} allowed dispersal of tropical organisms among oceans.}
+
+\hangpara Oceans were connected until 10–15 \textsc{mya} when Africa hit Eurasia, followed by Isthmus of Panama ca. 3 \textsc{mya}.
+
+\tiny \hfill Modified from \url{scotese.com})
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{oceans_current_configuration}}
+\begin{frame}[b]{Tropical organisms in different oceans are isolated by land and temperature.}
+\tiny \copyright\,McGraw-Hill)
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
+\begin{frame}[b]{The \highlight{continental margin} consists of the continental shelf, slope and rise.}
+
+\hfill \tiny \copyright\,McGraw-Hill)
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
+\begin{frame}[b]{The abyssal plain is between 3,000–6,000 m deep.}
+
+\hfill \tiny \copyright\,McGraw-Hill)
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{global_continental_shelf}}
+\begin{frame}[b]{\textcolor{white}{The continental shelf represents about 7–8\% of the ocean surface area.}}
+
+\hfill \tiny \textcolor{white}{Seafloor Topography \textsc{v}4.0, \copyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
+\end{frame}
+}
+%
+\lecture{instructor}{instructor}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{los_angeles_seafloor}}
+\begin{frame}[b]{}
+\tiny	\textcolor{white}{\textsc{usgs} Pacific Sea-Floor Mapping Project.}
+\end{frame}
+}
+%
+\lecture{instructor}{instructor}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{puerto_rico_trench}}
+\begin{frame}[b]{}
+
+\hfill \tiny \textcolor{white}{\textsc{usgs} Project \textsc{probe} Leg II.}
+
+\end{frame}
+}
+%
+\lecture{student}{student}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_na}}
+\begin{frame}[b]{}
+
+\hfill \tiny \textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
+
+\end{frame}
+}
+%
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{continental_shelf_sa}}
+\begin{frame}[t]{}
+
+\vspace*{4\baselineskip}
+
+\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Why is the shelf broad on the east coast and narrow on the west coast?}}
+
+\vspace*{1\baselineskip}
+
+\hangpara\hspace*{17em}\parbox[t]{1.5in}{\raggedright\textcolor{white}{Will this difference affect marine life? If so, how? If not, why not?}}
+
+\vfilll
+
+\tiny \textcolor{white}{Google Earth, \copyright\,2015 Google Inc.}
+\end{frame}
+}
+%
+
+\end{document}
