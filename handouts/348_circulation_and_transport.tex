@@ -15,7 +15,7 @@
 	\everymath{\displaystyle}
 
 \usepackage{fontspec}
-\setmainfont[Ligatures={TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, BoldItalicFont={* BoldItalic}, Numbers={Proportional}]{Linux Libertine O}
+\setmainfont[Ligatures={TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, BoldItalicFont={* BoldItalic}, Numbers={Proportional, OldStyle}]{Linux Libertine O}
 \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Linux Biolinum O}
 %\setmonofont[Scale=MatchLowercase]{Inconsolata}
 \usepackage{microtype}
@@ -49,6 +49,8 @@
 %\posttitle{\par\end{center}}
 %\predate{}\postdate{}
 
+\usepackage[sc]{titlesec}
+
 \renewcommand{\solutiontitle}{\noindent}
 \unframedsolutions
 \SolutionEmphasis{\bfseries}
@@ -58,7 +60,7 @@
 }
 
 \pagestyle{headandfoot}
-\firstpageheader{BI 348: Marine Biology}{}{\ifprintanswers\textbf{KEY} \else Name \rule{2.5in}{0.4pt}\fi}
+\firstpageheader{{\scshape bi}~348: Marine Biology}{}{\ifprintanswers\textbf{KEY} \else Name \rule{2.5in}{0.4pt}\fi}
 \runningheader{}{}{\footnotesize{pg. \thepage}}
 \footer{}{}{}
 \runningheadrule
@@ -67,7 +69,7 @@
 
 \begin{document}
 
-\subsection*{Ocean Currents and Larval Transport (\numpoints\ points)}
+\subsection*{Ocean currents and larval transport (\numpoints\ points)}
 
 \begin{multicols}{2}
 
