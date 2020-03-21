@@ -1,0 +1,208 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[t]{beamer}
+
+%%%% HANDOUTS For online Uncomment the following four lines for handout
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\includeonlylecture{student}
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%	\setbeamercolor{background canvas}{bg=black!5}
+
+
+%%% Including only some slides for students.
+%%% Uncomment the following line. For the slides,
+%%% use the labels shown below the command.
+
+%% For students, use \lecture{student}{student}
+%% For mine, use \lecture{instructor}{instructor}
+
+
+%\usepackage{pgf,pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,border shrink=5mm]
+
+% FONTS
+\usepackage{fontspec}
+\def\mainfont{Linux Biolinum O}
+\setmainfont[Ligatures={Common,TeX}, BoldFont={* Bold}, ItalicFont={* Italic}, Numbers={Proportional}]{\mainfont}
+\setsansfont[Scale=MatchLowercase]{Linux Biolinum O} 
+\usepackage{microtype}
+
+\usepackage{graphicx}
+	\graphicspath{%
+	{/Users/goby/Pictures/teach/348/lectures/}%
+	{/Users/goby/Pictures/teach/common/}%}%
+	{img/}} % set of paths to search for images
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage{units}
+
+%\usepackage{booktabs}
+\usepackage{multicol}
+%	\setlength{\columnsep=1em}
+
+%\usepackage{tikz}
+%	\tikzstyle{every picture}+=[remember picture,overlay]
+
+\usepackage[version=4]{mhchem}
+%\usepackage{siunitx}
+
+%\usepackage{textcomp}
+%\usepackage{setspace}
+\mode<presentation>
+{
+  \usetheme{Lecture}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{items}[square]
+}
+
+\usepackage{hyperref}
+
+\newcommand\HiddenWord[1]{%
+	\alt<handout>{\rule{4cm}{0.4pt}}{#1}%
+}
+
+\newcommand\skiptobottom{%
+	\vskip0pt plus 1filll%
+}
+
+\begin{document}
+
+\lecture{student}{student}
+
+\begin{frame}[t]{The effects of ocean acidification}
+
+	\includegraphics[width=\linewidth]{15_acidification_effects}
+
+	\vfilll
+	
+	\tiny \hfill Hoegh-Guldberg et al. 2007. Science 318: 1737.  
+
+	
+\end{frame}
+%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{14_aragonite_saturation_levels}}
+\begin{frame}[b]
+
+\hfill \tiny \rotatebox{90}{Kleypas et al. 2006. NOAA Workshop Report}
+\end{frame}
+}
+%
+\begin{frame}{\ce{CaCO2} availability is decreasing at depth.}
+
+\vspace{-0.5\baselineskip}
+
+\includegraphics[height=0.85\textheight]{15_aragonite_availability}
+
+\vfilll
+
+\tiny \hfill Orr et al. Nature 437: 681.  
+
+\end{frame}
+
+
+%
+\begin{frame}{Climate change causes ecological feedback.}
+\includegraphics[width=\linewidth]{14_ecological_feedback}
+
+\bigskip
+
+{\small
+Large arrows: impact points of acidification or warming. \\
+Red lines: negative (decreasing) influence. \\
+Green lines: positive (increasing) influence. \\
+Rectangles: decreasing levels (dashed boxes may respond to local management). \\
+Hexagons: increasing levels.}
+
+\end{frame}
+%
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_oculina_growth}}
+\begin{frame}[b]
+
+\hfill \tiny Doney et al. 2009. Ann.~Rev.~Mar.~Sci.~1: 169.  
+
+\end{frame}
+}
+
+%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_organismal_responses}}
+\begin{frame}[b]
+
+\hfill \tiny \rotatebox{90}{Doney et al.~2009. Ann.~Rev.~Mar.~Sci.~1: 169.}
+\end{frame}
+}
+
+%
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_urchin_fertilization}}
+\begin{frame}[b]
+
+\hfill \tiny Kurihara 2008. Mar.~Eco~ Prog.~Ser.~373: 275.  
+
+\end{frame}
+}
+%
+\begin{frame}{Increasing acidity increases deformation of larvae.}
+\includegraphics[width=\linewidth]{15_larval_deformations}
+
+\vfilll
+
+\hfill \tiny Kurihara 2008. Mar.~Eco.~Prog.~Ser.~373: 275. 
+\end{frame}
+%
+\begin{frame}{pH 7.4 reduces carapace length in juvenile shrimp.}
+\includegraphics[height=0.85\textheight]{15_juvenile_shrimp}
+
+\vfilll
+
+\hfill \tiny Kurihara 2008. Mar.~Eco.~Prog.~Ser.~373: 275. 
+\end{frame}
+%
+\begin{frame}{Acidification affects all life cycle stages.}
+\includegraphics[height=0.85\textheight]{15_acidification_lifecycles}
+
+\vfilll
+
+\hfill \tiny Kurihara 2008. Mar.~Eco.~Prog.~Ser.~373: 275. 
+\end{frame}
+%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_clownfish_setup}}
+\begin{frame}[b]
+
+\hfill \tiny \rotatebox{90}{Munday et al.~2009. \textsc{pnas} 106: 1848.  
+}
+\end{frame}
+}
+
+%
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_clownfish_results1}}
+\begin{frame}[b]
+
+\hfill \tiny Munday et al.~2009. \textsc{pnas} 106: 1848.  
+
+\end{frame}
+}
+
+%
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{15_clownfish_results2}}
+\begin{frame}[b]
+
+\hfill \tiny Munday et al.~2009. \textsc{pnas} 106: 1848.  
+
+\end{frame}
+}
+
+%
+\end{document}
