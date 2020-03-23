@@ -1,19 +1,19 @@
 %!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
 
-%\documentclass[t]{beamer}
+\documentclass[t]{beamer}
 
 %%%% HANDOUTS For online Uncomment the following four lines for handout
-\documentclass[t,handout]{beamer}  %Use this for handouts.
-\usepackage{handoutWithNotes}
-\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+%\documentclass[t,handout]{beamer}  %Use this for handouts.
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
 %	\setbeamercolor{background canvas}{bg=black!5}
 
 
 %%% Including only some slides for students.
 %%% Uncomment the following line. For the slides,
 %%% use the labels shown below the command.
-\includeonlylecture{student}
+%\includeonlylecture{student}
 
 %% For students, use \lecture{student}{student}
 %% For mine, use \lecture{instructor}{instructor}
@@ -164,14 +164,17 @@
 \end{frame}}
 
 
-%{\setbeamercolor{background canvas}{bg=black}
-%\begin{frame}[c]
-%	\begin{multicols}{2}
-%		\animategraphics[autoplay, loop,width=0.5\textwidth]{4}{flashlight_fish_}{0}{24}
-%	\columnbreak
-%		\includegraphics[width=0.49\textwidth]{flashlight_fish}
-%	\end{multicols}
-%\end{frame}}
+{\setbeamercolor{background canvas}{bg=black}
+\begin{frame}[c]
+	\begin{multicols}{2}
+		\animategraphics[autoplay, loop,width=0.5\textwidth]{4}{flashlight_fish_}{0}{24}
+	\columnbreak
+		\includegraphics[width=0.49\textwidth]{flashlight_fish}
+	\end{multicols}
+
+\vfilll
+\hfill \tiny\textcolor{white}{\href{https://youtu.be/VlyGpg35jMA}{Link to video}}
+\end{frame}}
 
 
 \lecture{student}{student}
