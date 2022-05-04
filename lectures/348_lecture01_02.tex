@@ -28,7 +28,7 @@
 \usepackage{graphicx}
 	\graphicspath{%
 	{/Users/goby/Pictures/teach/348/lectures/}%
-	{/Users/goby/Pictures/teach/common/}%}%
+	{/Users/goby/Pictures/teach/163/common/}%}%
 	{img/}} % set of paths to search for images
 
 \usepackage{amsmath,amssymb}
@@ -82,8 +82,8 @@
 
 \hangpara\hspace{17em} mtaylor@semo.edu
 
-	\hangpara \hspace{17em} \includegraphics[width=0.4cm]{twitter_icon} @MikeTaylor\textsc{semo}\\
-\hspace{17em} \#\textsc{bi}348\textsc{taylor}
+%	\hangpara \hspace{17em} \includegraphics[width=0.4cm]{twitter_icon} @MikeTaylor\textsc{semo}\\
+%\hspace{17em} \#\textsc{bi}348\textsc{taylor}
 \end{frame}
 }
 
@@ -407,6 +407,61 @@
 \end{frame}
 }
 %
+\lecture{instructor}{instructor}
+
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{deepest_points}}
+\begin{frame}[b]{\textcolor{white}{What are the deepest points in the oceans?}}
+
+\pause
+	\begin{tikzpicture}[form/.style={circle, inner sep=0pt, minimum size=3mm},
+		info/.style={white, align=right}]
+
+		\node[form] (marianas) at (4.7,4.4) [fill=white] {};
+		\node[info] [right, align=left] at (marianas.east) {Marianas Trench\\ 10,928m};
+
+\pause
+		\node[form] (puerto) at (10,4.6) [fill=white] {};
+		\node[info] [right, align=left] at (puerto.east) {Puerto Rico\\ Tr. 8,376 m};
+
+\pause
+		\node[form] (sunda) at (3.3,3.6) [fill=white] {};
+		\node[info] [left] at (sunda.west) {Sunda Trench\\ 7,192m};
+
+		\node[form] (diamantina) at (3.3,2.5) [fill=white] {};
+		\node[info] [left, align=left] at (diamantina.south west) {Diamantina\\ Deep 7,079 m};
+
+\pause
+		\node[form] (sandwich) at (11.5,1.3) [fill=white] {};
+		\node[info] [left] at (sandwich.west) {Sandwich Trench\\ 7,433 m};
+
+\pause
+		\node[info] [left] at (12,6) {Molloy Deep\\ 5550 m};
+		
+		\draw [->, white, ultra thick] (11.5,6.5) -- (12.4,7.5);
+
+
+	\end{tikzpicture}
+
+
+	\tiny \textcolor{white}{ \href{https://ngdc.noaa.gov/mgg/image/color_etopo1_ice_low.jpg}{Let's zoom in.} \hfill Seafloor Topography V4.0, \copyright\,W.H.F. Smith \& D.T. Sandwell, 1996.}
+
+\end{frame}
+}
+%
+
+%
+\begin{frame}[t]{Oceans are divided into horizontal and vertical zones.}
+	\begin{center}
+		\includegraphics[height=0.8\textheight]{ocean_zones}
+	\end{center}
+
+	\vfilll
+
+	\hfill \tiny \copyright\,Benjamin-Cummins
+\end{frame}
+%
+
+\lecture{student}{student}
 {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{seafloor_sections}}
 \begin{frame}[b]{The \highlight{continental margin} consists of the continental shelf, slope and rise.}
 
