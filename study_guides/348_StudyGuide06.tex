@@ -44,8 +44,14 @@
 \makeatother
 
 % Set up the spacing using fontspec features
-\renewcommand\allcapsspacing[1]{{\addfontfeatures{LetterSpace=15}#1}}
-\renewcommand\smallcapsspacing[1]{{\addfontfeatures{LetterSpace=10}#1}}
+%\renewcommand\allcapsspacing[1]{{\addfontfeatures{LetterSpace=15}#1}}
+%\renewcommand\smallcapsspacing[1]{{\addfontfeatures{LetterSpace=10}#1}}
+
+% See https://tex.stackexchange.com/a/37711/39194
+\renewcommand{\allcapsspacing}[1]{{\addfontfeature{LetterSpace=20.0}#1}}
+\renewcommand{\smallcapsspacing}[1]{{\addfontfeature{LetterSpace=5.0}#1}}
+\renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
 
 \title{Study Guide 06}
 \author{The Deep Sea}
@@ -60,11 +66,12 @@ The “deep sea” refers broadly to the ocean below 200 meters.
 %\printclassoptions
 
 \section{Vocabulary}
-\marginnote{\textbf{Study:} pgs. 27--29, 154--156 (bioluminescence, including the Hot Topic), 175--177.}
+\marginnote{\textbf{Study:} pgs. 11, 27--29, 154--156 (bioluminescence, including the Hot Topic), 175--177.}
 \vspace{-1\baselineskip}
 \begin{multicols}{2}
 mesopelagic \\
 bathypelagic \\
+photic \\
 disphotic \\
 aphotic \\
 thermocline \\
@@ -79,7 +86,7 @@ diel migration
 \begin{enumerate}
 
 \item
-  Distinguish between the mesopelagic, bathypelagic, disphotic, and aphotic zones. 
+  Distinguish\marginnote{Terms that include “photic” are based formally on light, not depth.} between the mesopelagic, bathypelagic, disphotic, and aphotic zones. 
   explain why the mesophotic and disphotic zones are not \emph{exactly} the same thing.
   Do the same for the bathypelagic and aphotic zones.
 
@@ -93,7 +100,7 @@ diel migration
   how temperature and salinity affects surface water density and causes the Great Ocean Conveyor.
 
 \item
-  How much does pressure change for every 10 meters of depth? Does the weight of the
+  How much does pressure change for every 10\,m of depth? Does the weight of the
   Earth's atmosphere above the surface of the ocean contribute to the pressure felt
   by organisms living underwater? Explain why or why not.
 
