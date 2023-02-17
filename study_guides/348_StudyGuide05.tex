@@ -16,8 +16,10 @@
 \usepackage{enumitem}
 \usepackage{multicol} % multiple column layout facilities
 %\usepackage{hyperref}
-%\usepackage{fancyvrb} % extended verbatim environments
-%  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
 
 % Change the header to shift the title to the left side of the page. 
 % Replaced \quad with \hfill.  See \plaintitle in tufte-common.def
@@ -44,8 +46,15 @@
 \makeatother
 
 % Set up the spacing using fontspec features
-\renewcommand\allcapsspacing[1]{{\addfontfeatures{LetterSpace=15}#1}}
-\renewcommand\smallcapsspacing[1]{{\addfontfeatures{LetterSpace=10}#1}}
+%\renewcommand\allcapsspacing[1]{{\addfontfeatures{LetterSpace=15}#1}}
+%\renewcommand\smallcapsspacing[1]{{\addfontfeatures{LetterSpace=10}#1}}
+
+% See https://tex.stackexchange.com/a/37711/39194
+\renewcommand{\allcapsspacing}[1]{{\addfontfeature{LetterSpace=20.0}#1}}
+\renewcommand{\smallcapsspacing}[1]{{\addfontfeature{LetterSpace=5.0}#1}}
+\renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+
 
 \title{Study Guide 05}
 \author{Primary Production and Ocean Ecosystem Models}
@@ -59,7 +68,7 @@
 %\printclassoptions
 
 \section{Vocabulary}
-\marginnote{\textbf{Study:} pgs. 225--240, 247--253.}
+\marginnote{\textbf{Study:} pgs.~198--203, 208--211, 219--222, 225--226.}
 \vspace{-1\baselineskip}
 \begin{multicols}{2}
 diatoms \\
@@ -71,7 +80,7 @@ gross primary production \\
 net primary production \\
 compensation depth \\
 compensation intensity \\
-PAR \\
+\textsc{par} \\
 Redfield ratio\\
 bacterioplankton \\
 microbial loop
@@ -82,11 +91,10 @@ microbial loop
 \begin{enumerate}
 
 \item
-  You should know the basic nutrient acronyms: DIC, DOC, DIP, DOP, DIN,
-  DON, DOM, etc.
+  You\marginnote{Dissolved or particulate, organic or inorganic, nitrogen, phosphorus, etc.} should know the basic nutrient acronyms: \textsc{dic, doc, dip, dop, din, don, dom,} etc.
 
 \item
-  What is primary production? What is photosynthesis? Are they the same
+  What is primary production? What is photosynthesis?\marginnote{\ce{CO2 + 6H2O ->[energy] C6H12O6 + 6O2}} Are they the same
   thing? Explain why or why not?
 
 \item
@@ -106,12 +114,12 @@ microbial loop
   compensation intensity.
 \item
   Explain the factors that influence photosynthetically available
-  radiation (PAR) at depth in the water column (for example, at 50 or
-  75m of depth). Consider both the atmospheric conditions and oceanic
+  radiation (\textsc{par}) at depth in the water column (for example, at 50\,m or
+  75\,m of depth). Consider both the atmospheric conditions and oceanic
   conditions.
 \item
   Considering (for now) only light intensity, why is primary
-  productivity higher at roughly 20m depth than at the surface?
+  productivity higher at roughly 20\,m depth than at the surface?
 
 
 \item
@@ -159,9 +167,8 @@ microbial loop
   trophic levels in terrestrial ecosystems. Explain why.
   
 \item
-  Total NPP of the oceans accounts for nearly half (ca. 46\%) of total
-  global NPP, yet the per area average NPP (i.e., kg C /
-  m\textsuperscript{2} / yr) is much lower for oceans than for
+  Total \textsc{npp} of the oceans accounts for nearly half (ca. 46\%) of total
+  global \textsc{npp}, yet the per area average~\textsc{npp} (i.e., \unit{\kilo\gram\,C \per\square\meter\per\,yr}) is much lower for oceans than for
   terrestrial ecosystems. Account for this apparent discrepancy.
  
  \end{enumerate}
