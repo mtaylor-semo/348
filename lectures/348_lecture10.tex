@@ -1,13 +1,13 @@
 %!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[t]{beamer}
+%\documentclass[t]{beamer}
 
 %%%% HANDOUTS For online Uncomment the following four lines for handout
-%\documentclass[t,handout]{beamer}  %Use this for handouts.
-%\includeonlylecture{student}
-%\usepackage{handoutWithNotes}
-%\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
+\documentclass[t,handout]{beamer}  %Use this for handouts.
+\includeonlylecture{student}
+\usepackage{handoutWithNotes}
+\pgfpagesuselayout{3 on 1 with notes}[letterpaper,border shrink=5mm]
 %	\setbeamercolor{background canvas}{bg=black!5}
 
 
@@ -31,8 +31,8 @@
 
 \usepackage{graphicx}
 	\graphicspath{%
-	{/Users/goby/Pictures/teach/348/lectures/}%
-	{/Users/goby/Pictures/teach/common/}%}%
+	{/Users/mtaylor/Pictures/teach/348/lectures/}%
+	{/Users/mtaylor/Pictures/teach/common/}%}%
 	{img/}} % set of paths to search for images
 
 \usepackage{amsmath,amssymb}
@@ -49,6 +49,10 @@
 %\usepackage{chemfig}
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
+
+\newcommand{\insertslide}[2]{%
+  \makebox{\includegraphics[page=#1,width=\textwidth, trim=0in 0in 0in 0in, clip]{#2}}
+}
 
 %\usepackage{textcomp}
 %\usepackage{setspace}
@@ -645,5 +649,25 @@
 \end{frame}
 }
 
+
+\begin{frame}
+\vspace{-\baselineskip}
+\insertslide{6}{478_Lecture09_instructor.pdf}
+\end{frame}
+
+\begin{frame}
+\vspace{-\baselineskip}
+\insertslide{7}{478_Lecture09_instructor.pdf}
+\end{frame}
+
+\begin{frame}
+\vspace{-\baselineskip}
+\insertslide{9}{478_Lecture09_instructor.pdf}
+\end{frame}
+
+\label{key}\begin{frame}
+\vspace{-\baselineskip}
+\insertslide{8}{478_Lecture09_instructor.pdf}
+\end{frame}
 
 \end{document}
